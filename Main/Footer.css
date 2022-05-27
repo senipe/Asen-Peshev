@@ -45,3 +45,14 @@
         bottom: 7.5vh;
         left: 45vh;
     }
+    
+    .footerText {
+        color: white;
+        font-size: 18px;
+    }
+    
+    .footerTextSmall {
+        color: white;
+        margin-top: 0.2vh;
+        font-size: 13px;
+    }

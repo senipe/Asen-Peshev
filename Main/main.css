@@ -70,16 +70,19 @@ nav ul li a {
 }
 
 .midText {
-    margin-top: 80vh;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
 }
 
 .midArrowDown {
-    position: relative;
+    position: absolute;
     cursor: pointer;
     height: 20px;
     width: auto;
     opacity: 50%;
-    bottom: 0;
+    bottom: 5vh;
     left: 50%;
     transform: translate(-50%);
 }
@@ -163,4 +166,12 @@ nav ul li a {
     height: 20vh;
     width: 100%;
     background-color: black;
+}
+
+.dropMenu {
+    display: none;
+}
+
+.mobileGallery {
+    display: none;
 }

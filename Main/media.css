@@ -1,0 +1,48 @@
+@media (max-width: 900px) {
+    .mobileHeader {
+        display: none;
+    }
+    .fa-bars {
+        color: #DFE0E1;
+        font-size: 60px;
+        position: absolute;
+        right: 3vh;
+        top: 3vh;
+        z-index: 10;
+    }
+    .dropMenu {
+        display: block;
+        position: inherit;
+    }
+    .secondBlock {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+    .videoGallery {
+        height: 50.63vw;
+        width: 90vw;
+        overflow: hidden;
+    }
+    .videoAbsolute {
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .gallery1,
+    .gallery2 {
+        display: none;
+    }
+    .mobileGallery {
+        display: block;
+    }
+    .socialIcons {
+        bottom: 10px;
+        right: 0;
+    }
+    .footerTextBox {
+        top: 20px;
+        left: 10px;
+    }
+}

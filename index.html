@@ -4,10 +4,13 @@
 <head>
     <link rel="icon" href="Graphics/icon.png">
     <title>Asen Peshev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
     <link rel="stylesheet" href="Main/main.css">
     <link rel="stylesheet" href="Main/main2.css">
     <link rel="stylesheet" href="Main/lightbox.css">
     <link rel="stylesheet" href="Main/Footer.css">
+    <link rel="stylesheet" href="Main/Media.css">
 
     <!-- Font + library links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,17 +61,20 @@
                         <a style="font-weight: 600" class="heading" href="index.html">ASEN PESHEV</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 30px;" class="lightAccent glow" href="">Concept</a>
+                        <a style="font-weight: 600; padding-left: 30px;" class="lightAccent glow mobileHeader" href="">Concept</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="lightAccent glow" href="">Illustration</a>
+                        <a style="font-weight: 600; padding-left: 15px;" class="lightAccent glow mobileHeader" href="">Illustration</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="lightAccent glow" href="About/about.html">About Me</a>
+                        <a style="font-weight: 600; padding-left: 15px;" class="lightAccent glow mobileHeader" href="About/about.html">About Me</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <div class="dropMenu">
+            <a class="fa fa-bars"></a>
+        </div>
         <!-- Text in middle of header -->
         <div class="fadeInTextSlow midText">
             <!--  <p style="font-weight: 600" class="midTextSmall ">Illustration and Concept Art</p>   -->
@@ -86,6 +92,13 @@
         <!-- Big gallery -->
         <div class="bigGallery">
             <img class="elementImage" src="Gallery/7.png" alt="1" onclick="specificSlide(1); showLightbox()">
+            <div class="mobileGallery">
+                <img class="elementImage" src="Gallery/5.png" alt="2" onclick="specificSlide(2); showLightbox()">
+                <img class="elementImage" src="Gallery/Enviornment-Painting-[4].png" alt="3" onclick="specificSlide(3); showLightbox()">
+                <img class="elementImage" src="Gallery/2.png" alt="4" onclick="specificSlide(4); showLightbox()">
+                <img class="elementImage" src="Gallery/enviornment.jpg" alt="5" onclick="specificSlide(5); showLightbox()">
+                <img class="elementImage" src="Gallery/Body_Iterations_[Final].png" alt="6" onclick="specificSlide(6); showLightbox()">
+            </div>
         </div>
 
         <!-- 2 column gallery -->
@@ -111,8 +124,8 @@
             <a href="mailto: asenpeshevuni@gmail.com" target="_blank" class="fa fa-envelope"></a>
         </div>
         <div class="footerTextBox">
-            <a style="color: white; font-size: 18px;" href="About/about.html">CONTACT</a>
-            <p style="color: white; font-size: 13px; margin-top: 1vh;">asenpeshevuni@gmail.com</p>
+            <a class="footerText" href="About/about.html">CONTACT</a>
+            <p class="footerTextSmall">asenpeshevuni@gmail.com</p>
         </div>
     </div>
     <!-- Footer Ends -->
