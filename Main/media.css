@@ -95,6 +95,18 @@
         transform: translate(50%);
         opacity: 50%;
     }
+    .hero2 {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        background-image: url(../Gallery/mobile-black.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .heading {
+        z-index: 10;
+    }
 }
 
 @media (max-height: 450px) {
