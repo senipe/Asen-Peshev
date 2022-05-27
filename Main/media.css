@@ -51,7 +51,10 @@
         background-color: transparent;
     }
     .hero {
-        height: 85vh;
+        height: 95vh;
+    }
+    .midText {
+        height: 95vh;
     }
     .element {
         top: 47%;
@@ -82,12 +85,24 @@
     .next {
         padding-left: 20%;
     }
-    @keyframes buttonFade {
-        from {
-            opacity: .5
-        }
-        to {
-            opacity: 0
-        }
+    .mobileNavigationText {
+        position: absolute;
+        display: block;
+        font-size: small;
+        text-align: center;
+        bottom: 10vh;
+        right: 50%;
+        transform: translate(50%);
+        opacity: 50%;
+    }
+}
+
+@media (max-height: 450px) {
+    .element {
+        max-height: 60vh;
+    }
+    .nextField,
+    .prevField {
+        height: 55vh;
     }
 }

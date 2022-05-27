@@ -85,6 +85,10 @@
     animation-duration: 0.8s;
 }
 
+.mobileNavigationText {
+    display: none;
+}
+
 @keyframes fade {
     from {
         opacity: .7
