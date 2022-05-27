@@ -46,6 +46,11 @@
     z-index: 10;
 }
 
+.prevField,
+.nextField {
+    display: none;
+}
+
 .prev,
 .next {
     cursor: pointer;
