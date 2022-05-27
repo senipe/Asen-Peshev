@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <link rel="icon" href="../Graphics/icon.png">
+    <link rel="icon" href="Graphics/icon.png">
     <title>Asen Peshev</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="main2.css">
-    <link rel="stylesheet" href="lightbox.css">
-    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="Main/main.css">
+    <link rel="stylesheet" href="Main/main2.css">
+    <link rel="stylesheet" href="Main/lightbox.css">
+    <link rel="stylesheet" href="Main/Footer.css">
 
     <!-- Font + library links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,30 +22,30 @@
         <a class="closeButton" onclick="hideLightbox()">+</a>
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img class="element1 element" src="../Gallery/7.png" alt="1">
+                <img class="element1 element" src="Gallery/7.png" alt="1">
             </div>
 
             <div class="mySlides fade">
-                <img class="element2 element" src="../Gallery/5.png" alt="2">
+                <img class="element2 element" src="Gallery/5.png" alt="2">
             </div>
             <div class="mySlides fade">
-                <img class="element3 element" src="../Gallery/Enviornment-Painting-[4].png" alt="3">
+                <img class="element3 element" src="Gallery/Enviornment-Painting-[4].png" alt="3">
             </div>
             <div class="mySlides fade">
-                <img class="element4 element" src="../Gallery/2.png" alt="4">
+                <img class="element4 element" src="Gallery/2.png" alt="4">
             </div>
             <div class="mySlides fade">
-                <img class="element5 element" src="../Gallery/enviornment.jpg" alt="5">
+                <img class="element5 element" src="Gallery/enviornment.jpg" alt="5">
             </div>
             <div class="mySlides fade">
-                <img class="element6 element" src="../Gallery/Body_Iterations_[Final].png" alt="6">
+                <img class="element6 element" src="Gallery/Body_Iterations_[Final].png" alt="6">
             </div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
-        <script src="disableScroll.js"></script>
-        <script src="slideScript.js"></script>
-        <script src="lightbox.js"></script>
+        <script src="Main/disableScroll.js"></script>
+        <script src="Main/slideScript.js"></script>
+        <script src="Main/lightbox.js"></script>
     </div>
     <!-- Lightbox ends -->
 
@@ -64,7 +64,7 @@
                         <a style="font-weight: 600; padding-left: 15px;" class="lightAccent glow" href="">Illustration</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="lightAccent glow" href="../About/about.html">About Me</a>
+                        <a style="font-weight: 600; padding-left: 15px;" class="lightAccent glow" href="About/about.html">About Me</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +72,7 @@
         <!-- Text in middle of header -->
         <div class="fadeInTextSlow midText">
             <!--  <p style="font-weight: 600" class="midTextSmall ">Illustration and Concept Art</p>   -->
-            <img class="midArrowDown" type="button" src="../Graphics/arrow_down3.png" alt="Arrow Button" onClick="document.querySelector('#middle').scrollIntoView({behavior: 'smooth'});">
+            <img class="midArrowDown" type="button" src="Graphics/arrow_down3.png" alt="Arrow Button" onClick="document.querySelector('#middle').scrollIntoView({behavior: 'smooth'});">
         </div>
     </div>
     <!-- Header Ends -->
@@ -85,18 +85,18 @@
 
         <!-- Big gallery -->
         <div class="bigGallery">
-            <img class="elementImage" src="../Gallery/7.png" alt="1" onclick="specificSlide(1); showLightbox()">
+            <img class="elementImage" src="Gallery/7.png" alt="1" onclick="specificSlide(1); showLightbox()">
         </div>
 
         <!-- 2 column gallery -->
         <div class="gallery1">
-            <img class="elementImage" src="../Gallery/5.png" alt="2" onclick="specificSlide(2); showLightbox()">
-            <img class="elementImage" src="../Gallery/2.png" alt="4" onclick="specificSlide(4); showLightbox()">
+            <img class="elementImage" src="Gallery/5.png" alt="2" onclick="specificSlide(2); showLightbox()">
+            <img class="elementImage" src="Gallery/2.png" alt="4" onclick="specificSlide(4); showLightbox()">
         </div>
         <div class="gallery2">
-            <img class="elementImage" src="../Gallery/Enviornment-Painting-[4].png" alt="3" onclick="specificSlide(3); showLightbox()">
-            <img class="elementImage" src="../Gallery/enviornment.jpg" alt="5" onclick="specificSlide(5); showLightbox()">
-            <img class="elementImage" src="../Gallery/Body_Iterations_[Final].png" alt="6" onclick="specificSlide(6); showLightbox()">
+            <img class="elementImage" src="Gallery/Enviornment-Painting-[4].png" alt="3" onclick="specificSlide(3); showLightbox()">
+            <img class="elementImage" src="Gallery/enviornment.jpg" alt="5" onclick="specificSlide(5); showLightbox()">
+            <img class="elementImage" src="Gallery/Body_Iterations_[Final].png" alt="6" onclick="specificSlide(6); showLightbox()">
             <img class="elementImage" src="" alt="" onclick="specificSlide(); showLightbox()">
         </div>
 
@@ -111,7 +111,7 @@
             <a href="mailto: asenpeshevuni@gmail.com" target="_blank" class="fa fa-envelope"></a>
         </div>
         <div class="footerTextBox">
-            <a style="color: white; font-size: 18px;" href="../About/about.html">CONTACT</a>
+            <a style="color: white; font-size: 18px;" href="About/about.html">CONTACT</a>
             <p style="color: white; font-size: 13px; margin-top: 1vh;">asenpeshevuni@gmail.com</p>
         </div>
     </div>
