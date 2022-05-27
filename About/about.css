@@ -1,0 +1,157 @@
+.white {
+    color: hsl(0, 100%, 100%);
+}
+
+.black {
+    color: hsl(0, 100%, 0%);
+}
+
+.accent {
+    color: #A8A6A1;
+}
+
+.lightAccent {
+    color: #DFE0E1;
+}
+
+.darkAccent {
+    color: #38383B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.hero {
+    height: 30vh;
+    width: 100%;
+    background-color: #A8A6A1;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 3%;
+    padding-right: 8%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.glow:hover {
+    color: hsl(0, 100%, 100%);
+    text-shadow: 0px 0px 30px hsl(0, 100%, 100%);
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.listObject {
+    margin-left: 0px;
+    padding: 10px 25px;
+}
+
+.heading {
+    color: hsl(0, 100%, 0%);
+    font-size: 25px;
+}
+
+.midText {
+    margin-top: 75vh;
+    text-align: center;
+}
+
+.midTextBig {
+    color: hsl(0, 100%, 100%);
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.midTextSmall {
+    color: #DFE0E1;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    opacity: 60%;
+}
+
+.fadeInTextFast {
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
+}
+
+.fadeInTextSlow {
+    animation: fadeIn linear 3s;
+    -webkit-animation: fadeIn linear 3s;
+    -moz-animation: fadeIn linear 3s;
+    -o-animation: fadeIn linear 3s;
+    -ms-animation: fadeIn linear 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.secondBlock {
+    height: 100vh;
+    width: 100%;
+    background-color: #DFE0E1;
+}
+
+.footer {
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+}

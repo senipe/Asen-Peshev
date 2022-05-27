@@ -1,0 +1,52 @@
+.secondBlock {
+    height: fit-content;
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    background-color: #f1f1f1;
+    /* #DFE0E1 */
+    padding: 10vh;
+}
+
+.videoGallery {
+    position: relative;
+    height: 71.2vh;
+    width: 100%;
+    margin-top: 5vh;
+    margin-bottom: 12vh;
+}
+
+.videoAbsolute {
+    position: inherit;
+    height: 100%;
+    width: 64%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.bigGallery {
+    width: 100;
+    height: auto;
+    float: left;
+    overflow: auto;
+}
+
+.gallery1 {
+    width: 49.85%;
+    height: auto;
+    float: left;
+    ;
+    overflow: auto;
+}
+
+.gallery2 {
+    width: 49.85%;
+    height: auto;
+    float: right;
+    overflow: auto;
+}
+
+.elementImage {
+    max-width: 100%;
+    cursor: pointer;
+}
