@@ -2,15 +2,21 @@
 <html>
 
 <head>
-    <link rel="icon" href="icon.png">
+    <link rel="icon" href="Graphics/icon.png">
     <title>Asen Peshev</title>
-    <link rel="stylesheet" href="about.css">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1">
 
-    <!-- Font links -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="media.css">
+
+    <!-- Font + library links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -20,35 +26,52 @@
             <div class="listObject fadeInTextFast">
                 <ul>
                     <li>
-                        <a style="font-weight: 600; text-decoration: none" class="heading glow" href="../index.html">ASEN PESHEV</a>
+                        <a style="font-weight: 600" class="heading" href="../index.html">ASEN PESHEV</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 30px; text-decoration: none" class="darkAccent glow" href="">Concept</a>
+                        <a style="font-weight: 600; padding-left: 30px;" class="darkAccent glow mobileHeader" href="../Concept/concept.html">Concept</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px; text-decoration: none" class="darkAccent glow" href="">Illustration</a>
+                        <a style="font-weight: 600; padding-left: 15px;" class="darkAccent glow mobileHeader" href="../Illustration/illustration.html">Illustration</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="darkAccent" href="about.html">About Me</a>
+                        <a style="font-weight: 600; padding-left: 15px;" class="darkAccent glow mobileHeader" href="about.html"><u>About Me</u></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <!-- Text in middle of header -->
-        <div class="fadeInTextSlow midText">
-            <p style="font-weight: 600" class="midTextSmall ">Illustration and Concept Art</p>
-            <img type="button" style="height:20px; width:auto; opacity: 50%" src="arrow_down3.png" alt="Arrow Button" onClick="document.querySelector('#middle').scrollIntoView({behavior: 'smooth'});">
+        <div class="hero2"></div>
+        <div class="dropMenu">
+            <a class="fa fa-bars"></a>
         </div>
     </div>
     <!-- Header Ends -->
     <!-- Body Starts -->
-    <div id="middle" class="secondBlock glow">
+    <div id="middle" class="secondBlock">
+        <!-- 2 column gallery -->
+        <div class="gallery1 floatElement">
+            <img class="elementImage" src="../Gallery/2Test.png" alt="4" onclick="specificSlide(1); showLightbox()">
+        </div>
+        <div class="gallery2Text floatElement">
+            <h1 style="font-size: 26px;"> Lorem Ipsum </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
 
     </div>
     <!-- Body Ends -->
     <!-- Footer Starts -->
-    <div class="footer ">
-
+    <div class="footer">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/apsollon" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.artstation.com/apsollon" target="_blank" class="fa fa-link"></a>
+            <a href="https://www.linkedin.com/in/asen-peshev-9b7b8722b/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="mailto: asenpeshevuni@gmail.com" target="_blank" class="fa fa-envelope"></a>
+        </div>
+        <div class="footerTextBox">
+            <a class="footerText" href="../About/about.html">CONTACT</a>
+            <p class="footerTextSmall">asenpeshevuni@gmail.com</p>
+        </div>
     </div>
     <!-- Footer Ends -->
 </body>

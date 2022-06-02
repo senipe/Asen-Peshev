@@ -6,11 +6,11 @@
     <title>Asen Peshev</title>
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1">
 
-    <link rel="stylesheet" href="Main/main.css">
-    <link rel="stylesheet" href="Main/main2.css">
-    <link rel="stylesheet" href="Main/lightbox.css">
-    <link rel="stylesheet" href="Main/footer.css">
-    <link rel="stylesheet" href="Main/media.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="media.css">
 
     <!-- Font + library links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,23 +25,23 @@
         <a class="closeButton" onclick="hideLightbox()">+</a>
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img class="element1 element" src="Gallery/7.png" alt="1">
+                <img class="element1 element" src="../Gallery/7.png" alt="1">
             </div>
 
             <div class="mySlides fade">
-                <img class="element2 element" src="Gallery/5.png" alt="2">
+                <img class="element2 element" src="../Gallery/5.png" alt="2">
             </div>
             <div class="mySlides fade">
-                <img class="element3 element" src="Gallery/Enviornment-Painting-[4].png" alt="3">
+                <img class="element3 element" src="../Gallery/Enviornment-Painting-[4].png" alt="3">
             </div>
             <div class="mySlides fade">
-                <img class="element4 element" src="Gallery/2.png" alt="4">
+                <img class="element4 element" src="../Gallery/2.png" alt="4">
             </div>
             <div class="mySlides fade">
-                <img class="element5 element" src="Gallery/enviornment.jpg" alt="5">
+                <img class="element5 element" src="../Gallery/enviornment.jpg" alt="5">
             </div>
             <div class="mySlides fade">
-                <img class="element6 element" src="Gallery/Body_Iterations_[Final].png" alt="6">
+                <img class="element6 element" src="../Gallery/Body_Iterations_[Final].png" alt="6">
             </div>
         </div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -51,9 +51,9 @@
             <div class="prevField" onclick="plusSlides(-1)"></div>
             <div class="nextField" onclick="plusSlides(1)"></div>
         </div>
-        <script src="Main/disableScroll.js"></script>
-        <script src="Main/slideScript.js"></script>
-        <script src="Main/lightbox.js"></script>
+        <script src="disableScroll.js"></script>
+        <script src="slideScript.js"></script>
+        <script src="lightbox.js"></script>
     </div>
     <!-- Lightbox ends -->
 
@@ -63,16 +63,16 @@
             <div class="listObject fadeInTextFast">
                 <ul>
                     <li>
-                        <a style="font-weight: 600" class="heading" href="index.html">ASEN PESHEV</a>
+                        <a style="font-weight: 600" class="heading" href="../index.html">ASEN PESHEV</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 30px;" class="lightAccent glow mobileHeader" href="Concept/concept.html">Concept</a>
+                        <a style="font-weight: 600; padding-left: 30px;" class="darkAccent glow mobileHeader" href="../Concept/concept.html">Concept</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="lightAccent glow mobileHeader" href="">Illustration</a>
+                        <a style="font-weight: 600; padding-left: 15px;" class="darkAccent glow mobileHeader" href="illustration.html"><u>Illustration</u></a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="lightAccent glow mobileHeader" href="About/about.html">About Me</a>
+                        <a style="font-weight: 600; padding-left: 15px;" class="darkAccent glow mobileHeader" href="../About/about.html">About Me</a>
                     </li>
                 </ul>
             </div>
@@ -80,11 +80,6 @@
         <div class="hero2"></div>
         <div class="dropMenu">
             <a class="fa fa-bars"></a>
-        </div>
-        <!-- Text in middle of header -->
-        <div class="fadeInTextSlow midText">
-            <!--  <p style="font-weight: 600" class="midTextSmall ">Illustration and Concept Art</p>   -->
-            <img class="midArrowDown" type="button" src="Graphics/arrow_down3.png" alt="Arrow Button" onClick="document.querySelector('#middle').scrollIntoView({behavior: 'smooth'});">
         </div>
     </div>
     <!-- Header Ends -->
@@ -97,25 +92,25 @@
 
         <!-- Big gallery -->
         <div class="bigGallery">
-            <img class="elementImage" src="Gallery/7.png" alt="1" onclick="specificSlide(1); showLightbox()">
+            <img class="elementImage" src="../Gallery/7.png" alt="1" onclick="specificSlide(1); showLightbox()">
             <div class="mobileGallery">
-                <img class="elementImage" src="Gallery/5.png" alt="2" onclick="specificSlide(2); showLightbox()">
-                <img class="elementImage" src="Gallery/Enviornment-Painting-[4].png" alt="3" onclick="specificSlide(3); showLightbox()">
-                <img class="elementImage" src="Gallery/2.png" alt="4" onclick="specificSlide(4); showLightbox()">
-                <img class="elementImage" src="Gallery/enviornment.jpg" alt="5" onclick="specificSlide(5); showLightbox()">
-                <img class="elementImage" src="Gallery/Body_Iterations_[Final].png" alt="6" onclick="specificSlide(6); showLightbox()">
+                <img class="elementImage" src="../Gallery/5.png" alt="2" onclick="specificSlide(2); showLightbox()">
+                <img class="elementImage" src="../Gallery/Enviornment-Painting-[4].png" alt="3" onclick="specificSlide(3); showLightbox()">
+                <img class="elementImage" src="../Gallery/2.png" alt="4" onclick="specificSlide(4); showLightbox()">
+                <img class="elementImage" src="../Gallery/enviornment.jpg" alt="5" onclick="specificSlide(5); showLightbox()">
+                <img class="elementImage" src="../Gallery/Body_Iterations_[Final].png" alt="6" onclick="specificSlide(6); showLightbox()">
             </div>
         </div>
 
         <!-- 2 column gallery -->
         <div class="gallery1">
-            <img class="elementImage" src="Gallery/5.png" alt="2" onclick="specificSlide(2); showLightbox()">
-            <img class="elementImage" src="Gallery/2.png" alt="4" onclick="specificSlide(4); showLightbox()">
+            <img class="elementImage" src="../Gallery/5.png" alt="2" onclick="specificSlide(2); showLightbox()">
+            <img class="elementImage" src="../Gallery/2.png" alt="4" onclick="specificSlide(4); showLightbox()">
         </div>
         <div class="gallery2">
-            <img class="elementImage" src="Gallery/Enviornment-Painting-[4].png" alt="3" onclick="specificSlide(3); showLightbox()">
-            <img class="elementImage" src="Gallery/enviornment.jpg" alt="5" onclick="specificSlide(5); showLightbox()">
-            <img class="elementImage" src="Gallery/Body_Iterations_[Final].png" alt="6" onclick="specificSlide(6); showLightbox()">
+            <img class="elementImage" src="../Gallery/Enviornment-Painting-[4].png" alt="3" onclick="specificSlide(3); showLightbox()">
+            <img class="elementImage" src="../Gallery/enviornment.jpg" alt="5" onclick="specificSlide(5); showLightbox()">
+            <img class="elementImage" src="../Gallery/Body_Iterations_[Final].png" alt="6" onclick="specificSlide(6); showLightbox()">
             <img class="elementImage" src="" alt="" onclick="specificSlide(); showLightbox()">
         </div>
 
@@ -130,7 +125,7 @@
             <a href="mailto: asenpeshevuni@gmail.com" target="_blank" class="fa fa-envelope"></a>
         </div>
         <div class="footerTextBox">
-            <a class="footerText" href="About/about.html">CONTACT</a>
+            <a class="footerText" href="../About/about.html">CONTACT</a>
             <p class="footerTextSmall">asenpeshevuni@gmail.com</p>
         </div>
     </div>

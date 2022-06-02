@@ -25,14 +25,6 @@
     font-family: 'Manrope', sans-serif;
 }
 
-.hero {
-    height: 30vh;
-    width: 100%;
-    background-color: #A8A6A1;
-    background-size: cover;
-    background-position: center;
-}
-
 nav {
     display: flex;
     padding-top: 24px;
@@ -43,6 +35,11 @@ nav {
 nav ul li {
     list-style-type: none;
     display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
 }
 
 .glow:hover {
@@ -54,33 +51,37 @@ nav ul li {
     transition: all 0.2s ease-in;
 }
 
+.hero {
+    background-color: #f1f1f1;
+}
+
 .listObject {
     margin-left: 0px;
     padding: 10px 25px;
+    z-index: 10;
 }
 
 .heading {
-    color: hsl(0, 100%, 0%);
+    color: black;
     font-size: 25px;
 }
 
 .midText {
-    margin-top: 75vh;
-    text-align: center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
 }
 
-.midTextBig {
-    color: hsl(0, 100%, 100%);
-    font-size: 60px;
-    margin-bottom: 20px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.midTextSmall {
-    color: #DFE0E1;
-    letter-spacing: 0.1em;
-    margin-bottom: 20px;
-    opacity: 60%;
+.midArrowDown {
+    position: absolute;
+    cursor: pointer;
+    height: 20px;
+    width: auto;
+    opacity: 50%;
+    bottom: 5vh;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .fadeInTextFast {
@@ -144,14 +145,16 @@ nav ul li {
     }
 }
 
-.secondBlock {
-    height: 100vh;
-    width: 100%;
-    background-color: #DFE0E1;
-}
-
 .footer {
     height: 20vh;
     width: 100%;
     background-color: black;
+}
+
+.dropMenu {
+    display: none;
+}
+
+.mobileGallery {
+    display: none;
 }
