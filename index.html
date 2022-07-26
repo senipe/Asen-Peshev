@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+
     <!-- IP -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
@@ -25,11 +25,33 @@
         // Add "https://ipinfo.io" statement
         // this will communicate with the ipify servers
         // in order to retrieve the IP address
-        $.get("https://ipinfo.io", function (response) {
+        $.get("https://ipinfo.io", function(response) {
             alert(response.ip);
         }, "json")
 
         // "json" shows that data will be fetched in json format
+    </script>
+    <script>
+        if ("geolocation" in navigator) {
+            // check if geolocation is supported/enabled on current browser
+            navigator.geolocation.getCurrentPosition(
+                function success(position) {
+                    // for when getting location is a success
+                    console.log('latitude', position.coords.latitude,
+                        'longitude', position.coords.longitude);
+                    alert(position.coords.latitude + " " + position.coords.longitude)
+
+                },
+                function error(error_message) {
+                    // for when getting location results in an error
+                    console.error('')
+                }
+            );
+        } else {
+            // geolocation is not supported
+            // get your location some other way
+            console.log('geolocation is not enabled on this browser')
+        }
     </script>
 </head>
 
