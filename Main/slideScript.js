@@ -1,18 +1,22 @@
 let slidesIndex = 1
+let memoryVar
+let s1 = "mySlides1"
+let s2 = "mySlides2"
 
 function specificSlide(y) {
-    slidesIndex = y
-    showSlides()
+    slidesIndex = 1
+    memoryVar = y
+    showSlides(y)
 }
 
 function plusSlides(n) {
     slidesIndex += n
-    showSlides();
+    showSlides(memoryVar);
 }
 
-function showSlides() {
+function showSlides(y) {
     let i
-    let slides = document.getElementsByClassName("mySlides1");
+    let slides = document.getElementsByClassName(y);
     console.log(slides.length);
 
     if (slidesIndex > slides.length) {
