@@ -66,8 +66,30 @@ nav ul li a {
 }
 
 .heading {
-    color: hsl(0, 100%, 100%);
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
     font-size: 25px;
+    letter-spacing: 2px;
+    opacity: 85%;
+}
+
+.heading:hover {
+    color: white;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.headingSmall {
+    font-size: 15px;
+    font-family: 'Manrope';
+    letter-spacing: 1px;
+    opacity: 80%;
 }
 
 .midText {
