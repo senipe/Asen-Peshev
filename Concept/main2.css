@@ -8,19 +8,13 @@
     padding: 10vh;
 }
 
-.videoGallery {
-    position: relative;
-    height: 71.2vh;
-    width: 100%;
-    margin-bottom: 12vh;
-}
-
-.videoAbsolute {
+.guideText {
+    display: inline-block;
     position: inherit;
-    height: 100%;
-    width: 64%;
     left: 50%;
     transform: translate(-50%);
+    opacity: 50%;
+    padding-bottom: 2vh;
 }
 
 .bigGallery {

@@ -25,6 +25,14 @@
     font-family: 'Manrope', sans-serif;
 }
 
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Gallery/Placeholders/16x9PlaceholderBlack.png);
+    background-size: cover;
+    background-position: center;
+}
+
 nav {
     display: flex;
     padding-top: 24px;
@@ -51,10 +59,6 @@ nav ul li a {
     transition: all 0.2s ease-in;
 }
 
-.hero {
-    background-color: #f1f1f1;
-}
-
 .listObject {
     margin-left: 0px;
     padding: 10px 25px;
@@ -62,8 +66,30 @@ nav ul li a {
 }
 
 .heading {
-    color: black;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v13/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
     font-size: 25px;
+    letter-spacing: 2px;
+    opacity: 85%;
+}
+
+.heading:hover {
+    color: white;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.headingSmall {
+    font-size: 15px;
+    font-family: 'Manrope';
+    letter-spacing: 1px;
+    opacity: 80%;
 }
 
 .midText {
@@ -82,6 +108,20 @@ nav ul li a {
     bottom: 5vh;
     left: 50%;
     transform: translate(-50%);
+}
+
+.midTextBig {
+    color: hsl(0, 100%, 100%);
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.midTextSmall {
+    color: #DFE0E1;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    opacity: 60%;
 }
 
 .fadeInTextFast {

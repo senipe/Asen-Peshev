@@ -50,6 +50,9 @@
     .next:hover {
         background-color: transparent;
     }
+    .hero {
+        height: 95vh;
+    }
     .midText {
         height: 95vh;
     }
@@ -92,10 +95,9 @@
         transform: translate(50%);
         opacity: 50%;
     }
-}
-
-.heading {
-    z-index: 10;
+    .heading {
+        z-index: 10;
+    }
 }
 
 @media (max-height: 450px) {

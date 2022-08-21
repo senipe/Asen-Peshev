@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="icon" href="Graphics/icon.png">
+    <link rel="icon" href="../Graphics/icon.png">
     <title>Asen Peshev</title>
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1">
 
@@ -24,29 +24,31 @@
     <div class="hiddenGallery lightbox">
         <a class="closeButton" onclick="hideLightbox()">+</a>
         <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img class="element1 element" src="../Gallery/7.png" alt="1">
+            <div class="mySlides1 fade allSlides">
+                <img class="element1 element" src="../Gallery/Placeholders/16x9Placeholder.png" alt="1">
             </div>
 
-            <div class="mySlides fade">
-                <img class="element2 element" src="../Gallery/5.png" alt="2">
+            <div class="mySlides1 fade allSlides">
+                <img class="element2 element" src="../Gallery/Placeholders/16x9Placeholderprocess1.png" alt="2">
             </div>
-            <div class="mySlides fade">
-                <img class="element3 element" src="../Gallery/Enviornment-Painting-[4].png" alt="3">
+            <div class="mySlides1 fade allSlides">
+                <img class="element3 element" src="../Gallery/Placeholders/16x9Placeholderprocess2.png" alt="3">
             </div>
-            <div class="mySlides fade">
-                <img class="element4 element" src="../Gallery/2.png" alt="4">
+            <div class="mySlides2 fade allSlides">
+                <img class="element4 element" src="../Gallery/Placeholders/239x1Placeholder.png" alt="4">
             </div>
-            <div class="mySlides fade">
-                <img class="element5 element" src="../Gallery/enviornment.jpg" alt="5">
+            <div class="mySlides2 fade allSlides">
+                <img class="element5 element" src="../Gallery/Placeholders/239x1Placeholderprocess1.png" alt="5">
             </div>
-            <div class="mySlides fade">
-                <img class="element6 element" src="../Gallery/Body_Iterations_[Final].png" alt="6">
+            <div class="mySlides2 fade allSlides">
+                <img class="element6 element" src="../Gallery/Placeholders/239x1Placeholderprocess2.png" alt="6">
             </div>
         </div>
+        <!-- Forward/Backward Buttons -->
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
         <p class="mobileNavigationText">Click to the left/right to navigate between images.</p>
+        <!-- Mobile Fields -->
         <div class="mobileFields">
             <div class="prevField" onclick="plusSlides(-1)"></div>
             <div class="nextField" onclick="plusSlides(1)"></div>
@@ -63,16 +65,16 @@
             <div class="listObject fadeInTextFast">
                 <ul>
                     <li>
-                        <a style="font-weight: 600" class="heading" href="../index.html">ASEN PESHEV</a>
+                        <a style="font-weight: 600" class="heading lightAccent">ASEN PESHEV</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 30px;" class="darkAccent glow mobileHeader" href="concept.html"><u>Concept</u></a>
+                        <a style="font-weight: 600; padding-left: 30px;" class="headingSmall lightAccent glow mobileHeader" href="../index.html">Illustrations</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="darkAccent glow mobileHeader" href="../Illustration/illustration.html">Illustration</a>
+                        <a style="font-weight: 600; padding-left: 20px;" class="headingSmall lightAccent glow mobileHeader" href="">Projects</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="darkAccent glow mobileHeader" href="../About/about.html">About Me</a>
+                        <a style="font-weight: 600; padding-left: 20px;" class="headingSmall lightAccent glow mobileHeader" href="../About/about.html">About Me</a>
                     </li>
                 </ul>
             </div>
@@ -81,36 +83,40 @@
         <div class="dropMenu">
             <a class="fa fa-bars"></a>
         </div>
+        <!-- Text in middle of header -->
+        <div class="fadeInTextSlow midText">
+            <!--  <p style="font-weight: 600" class="midTextSmall ">Illustration and Concept Art</p>   -->
+            <img class="midArrowDown" type="button" src="../Graphics/arrow_down3.png" alt="Arrow Button" onClick="document.querySelector('#middle').scrollIntoView({behavior: 'smooth'});">
+        </div>
     </div>
     <!-- Header Ends -->
     <!-- Body Starts -->
     <div id="middle" class="secondBlock">
 
-        <div class="videoGallery">
-            <iframe class="videoAbsolute" src="https://www.youtube.com/embed/_GhyjPk9U4s" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <a class="guideText">Click images for the process...</a>
 
         <!-- Big gallery -->
         <div class="bigGallery">
-            <img class="elementImage" src="../Gallery/7.png" alt="1" onclick="specificSlide(1); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/239x1Placeholder.png" alt="1" onclick="specificSlide(s2); showLightbox()">
             <div class="mobileGallery">
-                <img class="elementImage" src="../Gallery/5.png" alt="2" onclick="specificSlide(2); showLightbox()">
-                <img class="elementImage" src="../Gallery/Enviornment-Painting-[4].png" alt="3" onclick="specificSlide(3); showLightbox()">
-                <img class="elementImage" src="../Gallery/2.png" alt="4" onclick="specificSlide(4); showLightbox()">
-                <img class="elementImage" src="../Gallery/enviornment.jpg" alt="5" onclick="specificSlide(5); showLightbox()">
-                <img class="elementImage" src="../Gallery/Body_Iterations_[Final].png" alt="6" onclick="specificSlide(6); showLightbox()">
+                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="2" onclick="specificSlide(s1); showLightbox()">
+                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="3" onclick="specificSlide(s1); showLightbox()">
+                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="4" onclick="specificSlide(s1); showLightbox()">
+                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="5" onclick="specificSlide(s1); showLightbox()">
+                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="6" onclick="specificSlide(s1); showLightbox()">
             </div>
         </div>
 
         <!-- 2 column gallery -->
         <div class="gallery1">
-            <img class="elementImage" src="../Gallery/5.png" alt="2" onclick="specificSlide(2); showLightbox()">
-            <img class="elementImage" src="../Gallery/2.png" alt="4" onclick="specificSlide(4); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="2" onclick="specificSlide(s1); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="4" onclick="specificSlide(s1); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="6" onclick="specificSlide(s1); showLightbox()">
         </div>
         <div class="gallery2">
-            <img class="elementImage" src="../Gallery/Enviornment-Painting-[4].png" alt="3" onclick="specificSlide(3); showLightbox()">
-            <img class="elementImage" src="../Gallery/enviornment.jpg" alt="5" onclick="specificSlide(5); showLightbox()">
-            <img class="elementImage" src="../Gallery/Body_Iterations_[Final].png" alt="6" onclick="specificSlide(6); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="3" onclick="specificSlide(s1); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="5" onclick="specificSlide(s1); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="7" onclick="specificSlide(s1); showLightbox()">
             <img class="elementImage" src="" alt="" onclick="specificSlide(); showLightbox()">
         </div>
 
