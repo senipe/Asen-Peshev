@@ -16,6 +16,15 @@
     margin-bottom: 12vh;
 }
 
+.guideText {
+    display: inline-block;
+    position: inherit;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 50%;
+    padding-bottom: 2vh;
+}
+
 .videoAbsolute {
     position: inherit;
     height: 100%;
