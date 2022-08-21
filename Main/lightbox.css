@@ -4,6 +4,14 @@
     display: none;
 }
 
+.mySlides1 {
+    display: none;
+}
+
+.mySlides2 {
+    display: none;
+}
+
 .hiddenGallery {
     position: fixed;
     top: 0;

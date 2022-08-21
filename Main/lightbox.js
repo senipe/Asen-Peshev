@@ -1,5 +1,3 @@
-hideLightbox();
-
 function showLightbox() {
     let lightbox = document.getElementsByClassName("lightbox");
 
@@ -9,9 +7,8 @@ function showLightbox() {
 
 function hideLightbox() {
     let lightbox = document.getElementsByClassName("lightbox");
+    console.log(lightbox.length);
 
-    for (n = 0; n < lightbox.length; n++) {
-        lightbox[n].style.display = "none";
-    }
+    lightbox[0].style.display = "none";
     enableScroll()
 }
