@@ -59,6 +59,10 @@ nav ul li a {
     transition: all 0.2s ease-in;
 }
 
+.currentTab {
+    text-decoration: underline;
+}
+
 .listObject {
     margin-left: 0px;
     padding: 10px 25px;
