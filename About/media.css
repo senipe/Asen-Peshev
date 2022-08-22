@@ -15,26 +15,27 @@
         position: inherit;
     }
     .secondBlock {
-        padding-top: 1vh;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
         padding-left: 4vw;
         padding-right: 4vw;
     }
-    .gallery1 {
-        width: 100%;
-        max-width: 80%;
-        max-height: 95vh;
-        margin-left: 20px;
-        margin-right: 20px;
+    .videoGallery {
+        height: 50.63vw;
+        width: 90vw;
         overflow: hidden;
     }
-    .gallery2Text {
-        margin-top: 25px;
-        width: 80%;
-        height: auto;
-        margin-left: 2vw;
+    .videoAbsolute {
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%);
     }
-    .floatElement {
-        float: initial;
+    .gallery1,
+    .gallery2 {
+        display: none;
+    }
+    .mobileGallery {
+        display: block;
     }
     .socialIcons {
         bottom: 10px;
@@ -44,6 +45,45 @@
         color: white;
         top: 20px;
         left: 10px;
+    }
+    .prev:hover,
+    .next:hover {
+        background-color: transparent;
+    }
+    .hero {
+        height: 95vh;
+    }
+    .midText {
+        height: 95vh;
+    }
+    .element {
+        top: 47%;
+    }
+    .prev,
+    .next {
+        display: none;
+    }
+    .prevField {
+        left: 0;
+    }
+    .nextField {
+        right: 0;
+    }
+    .prevField,
+    .nextField {
+        position: absolute;
+        display: block;
+        height: 70vh;
+        width: 45%;
+        z-index: 100;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .prev {
+        padding-right: 20%;
+    }
+    .next {
+        padding-left: 20%;
     }
     .mobileNavigationText {
         position: absolute;
@@ -55,8 +95,26 @@
         transform: translate(50%);
         opacity: 50%;
     }
+    .hero2 {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        background-image: url(../Gallery/mobile-black.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .heading {
+        z-index: 10;
+    }
 }
 
-.heading {
-    z-index: 10;
+@media (max-height: 450px) {
+    .element {
+        max-height: 60vh;
+    }
+    .nextField,
+    .prevField {
+        height: 55vh;
+    }
 }

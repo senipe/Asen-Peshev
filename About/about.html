@@ -7,9 +7,8 @@
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1">
 
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="main2.css">
-    <link rel="stylesheet" href="lightbox.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="../headerBar.css">
     <link rel="stylesheet" href="media.css">
 
     <!-- Font + library links -->
@@ -26,16 +25,24 @@
             <div class="listObject fadeInTextFast">
                 <ul>
                     <li>
-                        <a style="font-weight: 600" class="heading" href="../index.html">ASEN PESHEV</a>
+                        <a style="font-weight: 600" class="heading lightAccent">ASEN PESHEV</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 30px;" class="darkAccent glow mobileHeader" href="../Concept/concept.html">Concept</a>
+                        <a style="font-weight: 600; margin-left: 30px;" class="headingSmall lightAccent glow mobileHeader" href="../index.html">Illustrations</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="darkAccent glow mobileHeader" href="../Illustration/illustration.html">Illustration</a>
+                        <a style="font-weight: 600; margin-left: 20px;" class="headingSmall lightAccent glow mobileHeader" href="../Concept/concept.html">Characters</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; padding-left: 15px;" class="darkAccent glow mobileHeader" href="about.html"><u>About Me</u></a>
+                        <div style="margin-left: 20px;" class="projectsDrop">
+                            <a style="font-weight: 600;" class="headingSmall lightAccent mobileHeader projects">Projects</a>
+                            <div class="projectsContent">
+                                <a href="../Project1/project1.html">Link 1 <br></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a style="font-weight: 600; padding-left: 20px;" class="headingSmall lightAccent currentTab glow mobileHeader" href="">About Me</a>
                     </li>
                 </ul>
             </div>
@@ -46,20 +53,6 @@
         </div>
     </div>
     <!-- Header Ends -->
-    <!-- Body Starts -->
-    <div id="middle" class="secondBlock">
-        <!-- 2 column gallery -->
-        <div class="gallery1 floatElement">
-            <img class="elementImage" src="../Gallery/2Test.png" alt="4" onclick="specificSlide(1); showLightbox()">
-        </div>
-        <div class="gallery2Text floatElement">
-            <h1 style="font-size: 26px;"> Lorem Ipsum </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-
-    </div>
-    <!-- Body Ends -->
     <!-- Footer Starts -->
     <div class="footer">
         <div class="socialIcons">
@@ -69,7 +62,7 @@
             <a href="mailto: asenpeshevuni@gmail.com" target="_blank" class="fa fa-envelope"></a>
         </div>
         <div class="footerTextBox">
-            <a class="footerText" href="../About/about.html">CONTACT</a>
+            <a class="footerText" href="About/about.html">CONTACT</a>
             <p class="footerTextSmall">asenpeshevuni@gmail.com</p>
         </div>
     </div>
