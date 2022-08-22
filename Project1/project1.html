@@ -25,24 +25,14 @@
     <div class="hiddenGallery lightbox">
         <a class="closeButton" onclick="hideLightbox()">+</a>
         <div class="slideshow-container">
-            <div class="mySlides1 fade allSlides">
+            <div class="mySlides fade allSlides">
                 <img class="element1 element" src="../Gallery/Placeholders/16x9Placeholder.png" alt="1">
             </div>
-
-            <div class="mySlides1 fade allSlides">
+            <div class="mySlides fade allSlides">
                 <img class="element2 element" src="../Gallery/Placeholders/16x9Placeholderprocess1.png" alt="2">
             </div>
-            <div class="mySlides1 fade allSlides">
+            <div class="mySlides fade allSlides">
                 <img class="element3 element" src="../Gallery/Placeholders/16x9Placeholderprocess2.png" alt="3">
-            </div>
-            <div class="mySlides2 fade allSlides">
-                <img class="element4 element" src="../Gallery/Placeholders/239x1Placeholder.png" alt="4">
-            </div>
-            <div class="mySlides2 fade allSlides">
-                <img class="element5 element" src="../Gallery/Placeholders/239x1Placeholderprocess1.png" alt="5">
-            </div>
-            <div class="mySlides2 fade allSlides">
-                <img class="element6 element" src="../Gallery/Placeholders/239x1Placeholderprocess2.png" alt="6">
             </div>
         </div>
         <!-- Forward/Backward Buttons -->
@@ -72,13 +62,13 @@
                         <a style="font-weight: 600; margin-left: 30px;" class="headingSmall lightAccent glow mobileHeader" href="../index.html">Illustrations</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; margin-left: 20px;" class="headingSmall lightAccent currentTab glow mobileHeader" href="">Characters</a>
+                        <a style="font-weight: 600; margin-left: 20px;" class="headingSmall lightAccent glow mobileHeader" href="../Concept/concept.html">Characters</a>
                     </li>
                     <li>
                         <div style="margin-left: 20px;" class="projectsDrop">
-                            <a style="font-weight: 600;" class="headingSmall lightAccent mobileHeader projects">Projects</a>
+                            <a style="font-weight: 600;" class="headingSmall lightAccent currentTab mobileHeader projects" href="">Projects</a>
                             <div class="projectsContent">
-                                <a href="../Project1/project1.html">Link 1 <br></a>
+                                <a class="currentTab" href="">Link 1 <br></a>
                             </div>
                         </div>
                     </li>
@@ -101,32 +91,13 @@
     <!-- Header Ends -->
     <!-- Body Starts -->
     <div id="middle" class="secondBlock">
-
-        <a class="guideText">Click images for the process...</a>
+        <a class="guideText">Click images for slideshow...</a>
 
         <!-- Big gallery -->
         <div class="bigGallery">
-            <img class="elementImage" src="../Gallery/Placeholders/239x1Placeholder.png" alt="1" onclick="specificSlide(s2); showLightbox()">
-            <div class="mobileGallery">
-                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="2" onclick="specificSlide(s1); showLightbox()">
-                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="3" onclick="specificSlide(s1); showLightbox()">
-                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="4" onclick="specificSlide(s1); showLightbox()">
-                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="5" onclick="specificSlide(s1); showLightbox()">
-                <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="6" onclick="specificSlide(s1); showLightbox()">
-            </div>
-        </div>
-
-        <!-- 2 column gallery -->
-        <div class="gallery1">
-            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="2" onclick="specificSlide(s1); showLightbox()">
-            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="4" onclick="specificSlide(s1); showLightbox()">
-            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="6" onclick="specificSlide(s1); showLightbox()">
-        </div>
-        <div class="gallery2">
-            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="3" onclick="specificSlide(s1); showLightbox()">
-            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="5" onclick="specificSlide(s1); showLightbox()">
-            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="7" onclick="specificSlide(s1); showLightbox()">
-            <img class="elementImage" src="" alt="" onclick="specificSlide(); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholder.png" alt="1" onclick="specificSlide(1); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholderprocess1.png" alt="2" onclick="specificSlide(2); showLightbox()">
+            <img class="elementImage" src="../Gallery/Placeholders/16x9Placeholderprocess2.png" alt="3" onclick="specificSlide(3); showLightbox()">
         </div>
 
     </div>
