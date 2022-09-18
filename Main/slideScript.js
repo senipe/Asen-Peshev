@@ -1,30 +1,49 @@
 let slidesIndex = 1
-let memoryVar
-let s1 = "mySlides1"
-let s2 = "mySlides2"
+let slidesLenght
+let tempName = ""
+let type = ""
 
-function specificSlide(y) {
+let png = ".png"
+let jpg = ".jpg"
+
+let s1 = "Gallery/Illustration2"
+let s2 = "Gallery/Illustration3"
+let s3 = "Gallery/Illustration4"
+
+function specificSlide(n, y, z) {
     slidesIndex = 1
-    memoryVar = y
-    showSlides(y)
+
+    slidesLenght = n
+    tempName = y
+    type = z
+
+    showSlides(slidesLenght)
 }
 
 function plusSlides(n) {
     slidesIndex += n
-    showSlides(memoryVar);
+    showSlides(slidesLenght);
 }
 
-function showSlides(y) {
+function showSlides(slidesLenght) {
     let i
-    let slides = document.getElementsByClassName(y);
-    console.log(slides.length);
+    let slides = document.getElementsByClassName("mySlides");
 
-    if (slidesIndex > slides.length) {
+    for (i = 0; i < slidesLenght; i++) {
+        let iPlus = i + 1
+        let source = tempName + "-" + iPlus.toString() + type;
+        console.log(source)
+
+        className = "element" + iPlus.toString();
+        document.getElementById(className).src = source;
+    }
+
+    if (slidesIndex > slidesLenght) {
         slidesIndex = 1;
     } /* Resets variable */
 
     if (slidesIndex < 1) {
-        slidesIndex = slides.length;
+        slidesIndex = slidesLenght;
     } /* Resets variable */
 
     for (i = 0; i < slides.length; i++) {
