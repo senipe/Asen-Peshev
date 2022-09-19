@@ -14,10 +14,15 @@
     <link rel="stylesheet" href="headerBar.css">
     <link rel="stylesheet" href="Main/media.css">
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+    </style>
+
     <!-- Font + library links -->
+    <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -54,9 +59,6 @@
             <div class="prevField " onclick="plusSlides(-1) "></div>
             <div class="nextField " onclick="plusSlides(1) "></div>
         </div>
-        <script src="Main/disableScroll.js "></script>
-        <script src="Main/slideScript.js "></script>
-        <script src="Main/lightbox.js "></script>
     </div>
     <!-- Lightbox ends -->
 
@@ -69,7 +71,7 @@
                         <a style="font-weight: 600 " class="heading lightAccent ">ASEN PESHEV</a>
                     </li>
                     <li>
-                        <a style="font-weight: 600; margin-left: 30px; " class="headingSmall lightAccent currentTab glow mobileHeader " href=" ">Illustrations</a>
+                        <a style="font-weight: 600; margin-left: 30px; " class="currentTab headingSmall lightAccent glow mobileHeader" href=" ">Illustrations</a>
                     </li>
                     <li>
                         <a style="font-weight: 600; margin-left: 20px; " class="headingSmall lightAccent glow mobileHeader " href="Concept/concept.html ">Characters</a>
@@ -95,7 +97,7 @@
         <!-- Text in middle of header -->
         <div class="fadeInTextSlow midText ">
             <!--  <p style="font-weight: 600 " class="midTextSmall ">Illustration and Concept Art</p>   -->
-            <img class="midArrowDown " type="button " src="Graphics/arrow_down3.png " alt="Arrow Button " onClick="document.querySelector( '#middle').scrollIntoView({behavior: 'smooth'}); ">
+            <img class="midArrowDown" type="button " src="Graphics/arrow_down3.png" alt="Arrow Button" onClick="">
         </div>
     </div>
     <!-- Header Ends -->
@@ -106,7 +108,7 @@
             <iframe class="videoAbsolute " src="https://www.youtube.com/embed/_GhyjPk9U4s " title="YouTube video player " frameborder="0 " allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
         </div>
 
-        <a class="guideText ">Click images for the process...</a>
+        <a class="guideText ">Click the images for process...</a>
 
         <!-- Big gallery -->
         <!-- <div class="bigGallery ">
@@ -123,14 +125,14 @@
         <!-- 2 column gallery -->
         <div class="gallery1 ">
             <img class="elementImage " src="Gallery/Illustration2-1.png " alt="1" onclick="specificSlide(4,s1,png); showLightbox() ">
-            <img class="elementImage " src="Gallery/Illustration4-1.png " alt="4 " onclick="specificSlide(1,s3,png); showLightbox() ">
-            <img class="elementImage " src="Gallery/Placeholders/16x9Placeholder.png " alt="6 " onclick="specificSlide(s1); showLightbox() ">
+            <img class="elementImage " src="Gallery/Illustration4-1.png " alt="4 " onclick="specificSlide(2,s3,png); showLightbox() ">
+            <!-- <img class="elementImage " src="Gallery/Placeholders/16x9Placeholder.png " alt="6 " onclick="specificSlide(s1); showLightbox() "> -->
         </div>
         <div class="gallery2 ">
-            <img class="elementImage " src="Gallery/Illustration3-1.jpg " alt="3 " onclick="specificSlide(1,s2,jpg); showLightbox() ">
-            <img class="elementImage " src="Gallery/Placeholders/16x9Placeholder.png " alt="5 " onclick="specificSlide(s1); showLightbox() ">
-            <img class="elementImage " src="Gallery/Placeholders/16x9Placeholder.png " alt="7 " onclick="specificSlide(s1); showLightbox() ">
-            <img class="elementImage " src=" " alt=" " onclick="specificSlide(); showLightbox() ">
+            <img class="elementImage " src="Gallery/Illustration5-1.png " alt="5 " onclick="specificSlide(4,s4,png); showLightbox() ">
+            <img class="elementImage " src="Gallery/Illustration3-1.jpg " alt="3 " onclick="specificSlide(3,s2,jpg); showLightbox() ">
+            <!-- <img class="elementImage " src="Gallery/Placeholders/16x9Placeholder.png " alt="7 " onclick="specificSlide(s1); showLightbox() "> -->
+            <!-- <img class="elementImage " src=" " alt=" " onclick="specificSlide(); showLightbox() "> -->
         </div>
 
     </div>
@@ -150,5 +152,8 @@
     </div>
     <!-- Footer Ends -->
 </body>
+<script src="Main/disableScroll.js "></script>
+<script src="Main/slideScript.js "></script>
+<script src="Main/lightbox.js "></script>
 
 </html>

@@ -9,6 +9,14 @@ let jpg = ".jpg"
 let s1 = "Gallery/Illustration2"
 let s2 = "Gallery/Illustration3"
 let s3 = "Gallery/Illustration4"
+let s4 = "Gallery/Illustration5"
+
+let btn = document.querySelector('.midArrowDown');
+let el = document.querySelector('.secondBlock');
+
+btn.addEventListener('click', function() {
+    el.scrollIntoView({ behavior: "smooth" });
+});
 
 function specificSlide(n, y, z) {
     slidesIndex = 1
