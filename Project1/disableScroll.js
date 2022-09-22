@@ -30,6 +30,8 @@ function disableScroll() {
     window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
     window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
     window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+    document.documentElement.style.overflow = 'hidden'; // firefox, chrome
+    document.body.scroll = "no"; // ie only
 }
 
 // call this to Enable
@@ -38,4 +40,6 @@ function enableScroll() {
     window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
     window.removeEventListener('touchmove', preventDefault, wheelOpt);
     window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+    document.documentElement.style.overflow = 'auto'; // firefox, chrome
+    document.body.scroll = "yes"; // ie only
 }

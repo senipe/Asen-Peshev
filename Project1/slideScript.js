@@ -1,8 +1,14 @@
 let slidesIndex = 1
-showSlides()
 
-function specificSlide(y) {
-    slidesIndex = y
+let btn = document.querySelector('.midArrowDown');
+let el = document.querySelector('.secondBlock');
+
+btn.addEventListener('click', function() {
+    el.scrollIntoView({ behavior: "smooth" });
+});
+
+function specificSlide(x) {
+    slidesIndex = x
     showSlides()
 }
 
@@ -14,8 +20,6 @@ function plusSlides(n) {
 function showSlides() {
     let i
     let slides = document.getElementsByClassName("mySlides");
-    console.log(slides.length);
-    console.log(slidesIndex);
 
     if (slidesIndex > slides.length) {
         slidesIndex = 1;

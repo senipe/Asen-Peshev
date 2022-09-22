@@ -30,30 +30,37 @@
     <div class="hiddenGallery lightbox">
         <a class="closeButton" onclick="hideLightbox()">+</a>
         <div class="slideshow-container">
-            <div class="mySlides fade allSlides">
-                <img class="element1 element" src="../Gallery/Placeholders/16x9Placeholder.png" alt="1">
+            <div class="close-container" onclick="hideLightbox()"></div>
+
+            <div class="mySlides allSlides ">
+                <img class="element1 element" id="element1" alt="1 " src="../Gallery/Placeholders/16x9Placeholder.png">
             </div>
-            <div class="mySlides fade allSlides">
-                <img class="element2 element" src="../Gallery/Placeholders/16x9Placeholderprocess1.png" alt="2">
+            <div class="mySlides allSlides ">
+                <img class="element2 element" id="element2" alt="2 " src="../Gallery/Placeholders/16x9Placeholderprocess1.png">
             </div>
-            <div class="mySlides fade allSlides">
-                <img class="element3 element" src="../Gallery/Placeholders/16x9Placeholderprocess2.png" alt="3">
+            <div class="mySlides allSlides ">
+                <img class="element3 element" id="element3" alt="3 " src="../Gallery/Placeholders/16x9Placeholderprocess2.png">
             </div>
+            <!-- <div class="mySlides allSlides ">
+                <img class="element4 element" id="element4" alt="3 ">
+            </div>
+            <div class="mySlides allSlides ">
+                <img class="element5 element" id="element5" alt="3 ">
+            </div> -->
+
         </div>
         <!-- Forward/Backward Buttons -->
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-        <p class="mobileNavigationText">Click to the left/right to navigate between images.</p>
+        <a class="prev " onclick="plusSlides(-1) ">❮</a>
+        <a class="next " onclick="plusSlides(1) ">❯</a>
+        <p class="mobileNavigationText ">Click to the left/right to navigate between images.</p>
         <!-- Mobile Fields -->
-        <div class="mobileFields">
-            <div class="prevField" onclick="plusSlides(-1)"></div>
-            <div class="nextField" onclick="plusSlides(1)"></div>
+        <div class="mobileFields ">
+            <div class="prevField " onclick="plusSlides(-1) "></div>
+            <div class="nextField " onclick="plusSlides(1) "></div>
         </div>
-        <script src="disableScroll.js"></script>
-        <script src="slideScript.js"></script>
-        <script src="lightbox.js"></script>
     </div>
     <!-- Lightbox ends -->
+
 
     <!-- Header Starts -->
     <div class="hero">
@@ -122,5 +129,8 @@
     </div>
     <!-- Footer Ends -->
 </body>
+<script src="disableScroll.js "></script>
+<script src="slideScript.js "></script>
+<script src="lightbox.js "></script>
 
 </html>

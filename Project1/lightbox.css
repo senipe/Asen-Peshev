@@ -21,8 +21,19 @@
     z-index: 50;
 }
 
+.close-container {
+    position: absolute;
+    /* background-color: red; */
+    /* position: -webkit-sticky; */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
 .slideshow-container {
     position: inherit;
+    /* background-color: red; */
     position: -webkit-sticky;
     height: 100vh;
     width: 100%;
@@ -30,14 +41,15 @@
 }
 
 .element {
-    max-height: 80vh;
-    max-width: 90%;
+    max-height: 98vh;
+    /* max-width: 100%; */
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    z-index: 100;
 }
 
 
@@ -90,7 +102,7 @@
 
 .fade {
     animation-name: fade;
-    animation-duration: 0.8s;
+    animation-duration: 0.3s;
 }
 
 .mobileNavigationText {
