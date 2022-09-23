@@ -27,7 +27,7 @@
         top: 5vh;
         z-index: 100;
         width: 45vw;
-        height: 50vh;
+        height: 47vh;
         overflow: scroll;
         /* transform: translate(-50%); */
     }
@@ -40,7 +40,7 @@
         top: 0;
         z-index: 100;
         width: 45vw;
-        height: 50vh;
+        height: 47vh;
         /* transform: translate(-50%); */
     }
     .dropMenu {
@@ -154,9 +154,9 @@
     }
     .textHold {
         position: inherit;
-        /* background-color: red; */
         width: 146px;
         left: 50%;
+        top: 3%;
         transform: translate(-50%);
         text-align: center;
     }
@@ -182,5 +182,8 @@
     .dropMenuProjects {
         width: 45vw;
         height: 80vh;
+    }
+    .textHold {
+        top: 0;
     }
 }
