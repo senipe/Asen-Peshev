@@ -1,14 +1,47 @@
 @media (max-width: 900px) {
-    .mobileHeader {
-        display: none;
-    }
     .fa-bars {
         color: #DFE0E1;
         font-size: 60px;
         position: absolute;
         right: 3vh;
         top: 3vh;
-        z-index: 10;
+        z-index: 101;
+    }
+    .close-bars {
+        display: none;
+        color: #6f6f6f;
+        font-size: 14px;
+        position: absolute;
+        left: 3vw;
+        top: 2.2vh;
+        opacity: 60%;
+        text-decoration: underline;
+        z-index: 101;
+    }
+    .mobileDropMenuBlock {
+        display: none;
+        background-color: #e9e9e9;
+        font-size: 60px;
+        position: absolute;
+        right: 4vh;
+        top: 5vh;
+        z-index: 100;
+        width: 45vw;
+        height: 50vh;
+        overflow: scroll;
+        /* transform: translate(-50%); */
+    }
+    .dropMenuProjects {
+        display: none;
+        background-color: #e9e9e9;
+        font-size: 60px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        width: 45vw;
+        height: 50vh;
+        /* transform: translate(-50%); */
     }
     .dropMenu {
         display: block;
@@ -107,6 +140,27 @@
     .heading {
         z-index: 10;
     }
+    /* clusterfuck */
+    .hideMobile {
+        display: none;
+    }
+    .headingMobile {
+        display: inline-block;
+        transform: scale(1, 1.05);
+        font-size: 14px;
+        font-family: 'Work Sans';
+        letter-spacing: 1.5px;
+        opacity: 80%;
+    }
+    .textHold {
+        position: inherit;
+        /* background-color: red; */
+        width: 146px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+    /* clusterfuck end */
 }
 
 @media (max-height: 450px) {
@@ -116,5 +170,17 @@
     .nextField,
     .prevField {
         height: 55vh;
+    }
+    .close-bars {
+        left: 3vw;
+        top: 5.5vh;
+    }
+    .mobileDropMenuBlock {
+        width: 45vw;
+        height: 80vh;
+    }
+    .dropMenuProjects {
+        width: 45vw;
+        height: 80vh;
     }
 }

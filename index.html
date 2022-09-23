@@ -65,34 +65,50 @@
     <!-- Header Starts -->
     <div class="hero ">
         <nav>
-            <div class="listObject fadeInTextFast ">
+            <div class="listObject fadeInTextFast">
                 <ul>
                     <li>
-                        <a style="font-weight: 600 " class="heading lightAccent ">ASEN PESHEV</a>
+                        <a style="font-weight: 600 " class="heading lightAccent">ASEN PESHEV</a>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <a style="font-weight: 600; margin-left: 30px; " class="currentTab headingSmall lightAccent glow mobileHeader" href=" ">Illustrations</a>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <a style="font-weight: 600; margin-left: 20px; " class="headingSmall lightAccent glow mobileHeader" href="Concept/concept.html">Characters</a>
                     </li>
-                    <li>
-                        <div style="margin-left: 20px; " class="projectsDrop ">
-                            <a style="font-weight: 600; " class="headingSmall lightAccent mobileHeader projects ">Projects</a>
+                    <li class="hideMobile">
+                        <div style="margin-left: 20px; " class="projectsDrop mobileHeader">
+                            <a style="font-weight: 600; " class="headingSmall lightAccent projects ">Projects</a>
                             <div class="projectsContent ">
                                 <a href="Project1/project1.html ">Link 1 <br></a>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a style="font-weight: 600; padding-left: 20px; " class="headingSmall lightAccent glow mobileHeader " href="About/about.html ">About Me</a>
+                    <li class="hideMobile">
+                        <a style="font-weight: 600; padding-left: 20px; " class="headingSmall lightAccent glow mobileHeader" href="About/about.html ">About Me</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="hero2 "></div>
         <div class="dropMenu ">
-            <a class="fa fa-bars "></a>
+            <a class="fa fa-bars" onclick=""></a>
+            <div class="mobileDropMenuBlock">
+                <div class="dropMenuProjects">
+                    <a class="close-bars" onclick="">Back</a>
+                    <div class="textHold">
+                        <a class="headingMobile BLACKlightAccent" href=" ">Project 1</a>
+                    </div>
+                </div>
+                <!-- <a class="close-bars" onclick="">X</a> -->
+                <div class="textHold">
+                    <a class="headingMobile BLACKlightAccent" href=" ">Illustrations</a>
+                    <a class="headingMobile BLACKlightAccent" href="Concept/concept.html">Characters</a>
+                    <a class="headingMobile BLACKlightAccent projectsMobile">Projects</a>
+                    <a class="headingMobile BLACKlightAccent" href="About/about.html ">About Me</a>
+                </div>
+
+            </div>
         </div>
         <!-- Text in middle of header -->
         <div class="fadeInTextSlow midText ">
@@ -154,5 +170,6 @@
 <script src="Main/disableScroll.js "></script>
 <script src="Main/slideScript.js "></script>
 <script src="Main/lightbox.js "></script>
+<script src="Main/main.js "></script>
 
 </html>
