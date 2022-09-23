@@ -2,6 +2,9 @@
     .close-container {
         display: none;
     }
+    .currentTab {
+        color: black;
+    }
     .fa-bars {
         color: #DFE0E1;
         font-size: 60px;
@@ -30,7 +33,7 @@
         top: 5vh;
         z-index: 100;
         width: 45vw;
-        height: 47vh;
+        height: 40vh;
         overflow: scroll;
         /* transform: translate(-50%); */
     }
@@ -47,7 +50,7 @@
         top: 0;
         z-index: 100;
         width: 45vw;
-        height: 47vh;
+        height: 40vh;
         /* transform: translate(-50%); */
     }
     .dropMenu {
@@ -126,21 +129,6 @@
     .next {
         padding-left: 20%;
     }
-    .mobileNavigationText {
-        position: absolute;
-        display: block;
-        font-size: small;
-        text-align: center;
-        bottom: 5vh;
-        right: 50%;
-        transform: translate(50%);
-        opacity: 50%;
-        animation: fadeOut 5s;
-        -webkit-animation: fadeOut 5s;
-        -moz-animation: fadeOut 5s;
-        -o-animation: fadeOut 5s;
-        -ms-animation: fadeOut 5s;
-    }
     .hero2 {
         position: absolute;
         height: 100vh;
@@ -173,52 +161,6 @@
         transform: translate(-50%);
         text-align: center;
     }
-    /* clusterfuck end */
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@-o-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@-ms-keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 
 @media (max-height: 450px) {
@@ -236,18 +178,14 @@
     }
     .mobileDropMenuBlock {
         width: 45vw;
-        height: 80vh;
+        height: 72vh;
     }
     .dropMenuProjects {
         width: 45vw;
-        height: 80vh;
+        height: 72vh;
     }
     .textHold {
         top: 0;
-    }
-    .mobileNavigationText {
-        color: white;
-        bottom: 15vh;
     }
     .guideText {
         padding-left: 20vw;

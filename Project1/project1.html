@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="lightbox.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="../headerBar.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="../Main/media.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
@@ -52,7 +52,6 @@
         <!-- Forward/Backward Buttons -->
         <a class="prev " onclick="plusSlides(-1) ">❮</a>
         <a class="next " onclick="plusSlides(1) ">❯</a>
-        <p class="mobileNavigationText ">Click to the left/right to navigate between images.</p>
         <!-- Mobile Fields -->
         <div class="mobileFields ">
             <div class="prevField " onclick="plusSlides(-1) "></div>
@@ -70,13 +69,13 @@
                     <li>
                         <a style="font-weight: 600" class="heading lightAccent">ASEN PESHEV</a>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <a style="font-weight: 600; margin-left: 30px;" class="headingSmall lightAccent glow mobileHeader" href="../index.html">Illustrations</a>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <a style="font-weight: 600; margin-left: 20px;" class="headingSmall lightAccent glow mobileHeader" href="../Concept/concept.html">Characters</a>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <div style="margin-left: 20px;" class="projectsDrop">
                             <a style="font-weight: 600;" class="headingSmall lightAccent currentTab mobileHeader projects" href="">Projects</a>
                             <div class="projectsContent">
@@ -84,15 +83,31 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <a style="font-weight: 600; padding-left: 20px;" class="headingSmall lightAccent glow mobileHeader" href="../About/about.html">About Me</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="hero2"></div>
-        <div class="dropMenu">
-            <a class="fa fa-bars"></a>
+        <div class="dropMenu ">
+            <a class="fa fa-bars" onclick=""></a>
+            <div class="mobileDropMenuBlock">
+                <div class="dropMenuProjects">
+                    <a class="close-bars" onclick="">Back</a>
+                    <div class="textHold">
+                        <a class="headingMobile BLACKlightAccent currentTab" href="../Project1/project1.html ">Project 1</a>
+                    </div>
+                </div>
+                <!-- <a class="close-bars" onclick="">X</a> -->
+                <div class="textHold">
+                    <a class="headingMobile BLACKlightAccent" href="../index.html">Illustrations</a>
+                    <a class="headingMobile BLACKlightAccent" href="../Concept/concept.html">Characters</a>
+                    <a class="headingMobile BLACKlightAccent projectsMobile currentTab">Projects</a>
+                    <a class="headingMobile BLACKlightAccent" href="../About/about.html ">About Me</a>
+                </div>
+
+            </div>
         </div>
         <!-- Text in middle of header -->
         <div class="fadeInTextSlow midText">
@@ -130,7 +145,8 @@
     <!-- Footer Ends -->
 </body>
 <script src="disableScroll.js "></script>
-<script src="slideScript.js "></script>
+<script src="../Main/slideScript.js "></script>
 <script src="lightbox.js "></script>
+<script src="../Main/main.js "></script>
 
 </html>

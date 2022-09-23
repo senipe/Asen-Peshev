@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../headerBar.css">
     <link rel="stylesheet" href="../headerBar2.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../Main/media.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
@@ -33,13 +33,13 @@
                     <li>
                         <a style="font-weight: 600" class="heading BLACKlightAccent">ASEN PESHEV</a>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <a style="font-weight: 600; margin-left: 30px;" class="headingSmall BLACKlightAccent glow mobileHeader" href="../index.html">Illustrations</a>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <a style="font-weight: 600; margin-left: 20px;" class="headingSmall BLACKlightAccent glow mobileHeader" href="../Concept/concept.html">Characters</a>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <div style="margin-left: 20px;" class="projectsDrop">
                             <a style="font-weight: 600;" class="headingSmall BLACKlightAccent mobileHeader projects">Projects</a>
                             <div class="projectsContent">
@@ -47,15 +47,31 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="hideMobile">
                         <a style="font-weight: 600; padding-left: 20px;" class="headingSmall BLACKlightAccent currentTab glow mobileHeader" href="">About Me</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="hero2"></div>
-        <div class="dropMenu">
-            <a class="fa fa-bars"></a>
+        <div class="dropMenu ">
+            <a class="fa fa-bars" onclick=""></a>
+            <div class="mobileDropMenuBlock">
+                <div class="dropMenuProjects">
+                    <a class="close-bars" onclick="">Back</a>
+                    <div class="textHold">
+                        <a class="headingMobile BLACKlightAccent" href="../Project1/project1.html ">Project 1</a>
+                    </div>
+                </div>
+                <!-- <a class="close-bars" onclick="">X</a> -->
+                <div class="textHold">
+                    <a class="headingMobile BLACKlightAccent" href="../index.html">Illustrations</a>
+                    <a class="headingMobile BLACKlightAccent" href="Concept/concept.html">Characters</a>
+                    <a class="headingMobile BLACKlightAccent projectsMobile">Projects</a>
+                    <a class="headingMobile BLACKlightAccent currentTab" href="About/about.html ">About Me</a>
+                </div>
+
+            </div>
         </div>
         <div class="aboutBox"></div>
     </div>
@@ -75,5 +91,6 @@
     </div>
     <!-- Footer Ends -->
 </body>
+<script src="../Main/main.js "></script>
 
 </html>

@@ -6,6 +6,8 @@ let projectsMobile = document.querySelector('.projectsMobile');
 let btn = document.querySelector('.midArrowDown');
 let el = document.querySelector('.secondBlock');
 
+console.log("hey")
+
 function dropProjectsHide() {
     dropMenu.style.overflow = "scroll"
     dropMenuProjects.style.display = "none";
