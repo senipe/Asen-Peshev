@@ -1,4 +1,7 @@
 @media (max-width: 900px) {
+    .close-container {
+        display: none;
+    }
     .fa-bars {
         color: #DFE0E1;
         font-size: 60px;
@@ -30,6 +33,10 @@
         height: 47vh;
         overflow: scroll;
         /* transform: translate(-50%); */
+    }
+    .guideText {
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
     .dropMenuProjects {
         display: none;
@@ -91,6 +98,7 @@
     }
     .element {
         top: 47%;
+        max-width: 70%;
     }
     .prev,
     .next {
@@ -123,10 +131,15 @@
         display: block;
         font-size: small;
         text-align: center;
-        bottom: 10vh;
+        bottom: 5vh;
         right: 50%;
         transform: translate(50%);
         opacity: 50%;
+        animation: fadeOut 5s;
+        -webkit-animation: fadeOut 5s;
+        -moz-animation: fadeOut 5s;
+        -o-animation: fadeOut 5s;
+        -ms-animation: fadeOut 5s;
     }
     .hero2 {
         position: absolute;
@@ -163,9 +176,55 @@
     /* clusterfuck end */
 }
 
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 @media (max-height: 450px) {
     .element {
-        max-height: 60vh;
+        max-width: 90%;
+        top: 50%;
     }
     .nextField,
     .prevField {
@@ -185,5 +244,13 @@
     }
     .textHold {
         top: 0;
+    }
+    .mobileNavigationText {
+        color: white;
+        bottom: 15vh;
+    }
+    .guideText {
+        padding-left: 20vw;
+        padding-right: 20vw;
     }
 }
