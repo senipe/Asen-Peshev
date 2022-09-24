@@ -1,6 +1,10 @@
 function showLightbox() {
     // window.scrollBy(0, -50);
-    window.scrollBy(0, 50);
+    window.scrollBy({
+        top: 50,
+        left: 0,
+        behavior: 'smooth'
+    });
     let lightbox = document.getElementsByClassName("lightbox");
     lightbox[0].style.display = "block";
     disableScroll()
