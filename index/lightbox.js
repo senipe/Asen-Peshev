@@ -1,6 +1,6 @@
 function showLightbox() {
+    window.scrollBy(0, 1);
     let lightbox = document.getElementsByClassName("lightbox");
-
     lightbox[0].style.display = "block";
     disableScroll()
 }
@@ -19,16 +19,3 @@ function hideLightbox() {
 
     enableScroll()
 }
-
-// function hideLightbox2() {
-//     document.getElementsByClassName('slideshow-container')[0]
-//         .addEventListener('click', function(event) {
-//             lightbox[0].style.display = "none";
-
-//             for (i = 0; i < slides.length; i++) {
-//                 slides[i].style.display = "none";
-//             } /* Removes all objects of slides1 */
-
-//             enableScroll()
-//         });
-// }
