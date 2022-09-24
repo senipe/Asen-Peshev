@@ -1,27 +1,37 @@
-/* Slideshow container */
-
 .lightbox {
     display: none;
 }
 
-.mySlides1 {
-    display: none;
-}
-
-.mySlides2 {
-    display: none;
-}
-
-.hiddenGallery {
+.lightboxContainer {
     position: fixed;
     top: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.7);
-    z-index: 50;
+    z-index: 1001;
 }
 
-.close-container {
+a.closeButton {
+    cursor: pointer;
+    font-size: 35px;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 3vh;
+    top: 2vh;
+    z-index: 1000;
+}
+
+.slideshowContainer {
+    position: inherit;
+    /* background-color: red; */
+    position: -webkit-sticky;
+    height: 100vh;
+    width: 100%;
+    padding: 10vh;
+}
+
+.closeField {
     position: absolute;
     /* background-color: red; */
     /* position: -webkit-sticky; */
@@ -31,16 +41,7 @@
     width: 100vw;
 }
 
-.slideshow-container {
-    position: inherit;
-    /* background-color: red; */
-    position: -webkit-sticky;
-    height: 100vh;
-    width: 100%;
-    padding: 10vh;
-}
-
-.element {
+img.element {
     max-height: 90vh;
     max-width: 90%;
     margin: 0;
@@ -52,27 +53,8 @@
     z-index: 100;
 }
 
-
-/* Next & previous and close buttons */
-
-.closeButton {
-    cursor: pointer;
-    font-size: 35px;
-    display: inline-block;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 3vh;
-    top: 2vh;
-    z-index: 10;
-}
-
-.prevField,
-.nextField {
-    display: none;
-}
-
-.prev,
-.next {
+a.prevButton,
+a.nextButton {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -87,14 +69,19 @@
     user-select: none;
 }
 
-.next {
+a.nextButton {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover,
-.next:hover {
+a.prevButton:hover,
+a.nextButton:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prevField,
+.nextField {
+    display: none;
 }
 
 

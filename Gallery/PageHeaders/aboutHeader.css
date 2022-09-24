@@ -1,0 +1,17 @@
+.header {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .mobileDropMenuBlock {
+        background-color: #191919;
+    }
+    a.currentTab {
+        color: #DFE0E1;
+    }
+    a.closeBars {
+        color: white;
+    }
+}

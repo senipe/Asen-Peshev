@@ -1,4 +1,5 @@
 let slidesIndex = 1
+
 let slidesLenght
 let tempName = ""
 let type = ""

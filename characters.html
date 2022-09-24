@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="index/lightbox.css">
     <link rel="stylesheet" href="index/footer.css">
     <link rel="stylesheet" href="index/headerBarDARK.css">
-    <link rel="stylesheet" href="Gallery/PageHeaders/illustrationsHeader.css">
+    <link rel="stylesheet" href="Gallery/PageHeaders/charactersHeader.css">
     <link rel="stylesheet" href="index/media.css">
 
     <!-- pyscript -->
     <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
 
     <!-- fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -75,11 +75,11 @@
                     </li>
 
                     <li class="hideMobile">
-                        <a style="font-weight: 600; margin-left: 30px; " class="currentTab headingSmall lightAccent glow hideMobile" href="">Illustrations</a>
+                        <a style="font-weight: 600; margin-left: 30px; " class="headingSmall lightAccent glow hideMobile" href="index.html">Illustrations</a>
                     </li>
 
                     <li class="hideMobile">
-                        <a style="font-weight: 600; margin-left: 20px; " class="headingSmall lightAccent glow hideMobile" href="characters.html">Characters</a>
+                        <a style="font-weight: 600; margin-left: 20px; " class="currentTab headingSmall lightAccent glow hideMobile" href="">Characters</a>
                     </li>
 
                     <li class="hideMobile">
@@ -103,8 +103,8 @@
             <img id="faBars" src="Gallery/Graphics/menuIconWhite.png">
             <div class="mobileDropMenuBlock fadeInSuperFast">
                 <div class="textHold dropMenuDefault">
-                    <a class="headingMobile BLACKlightAccent currentTab" href="">Illustrations</a>
-                    <a class="headingMobile BLACKlightAccent" href="characters.html">Characters</a>
+                    <a class="headingMobile BLACKlightAccent" href="index.html">Illustrations</a>
+                    <a class="headingMobile BLACKlightAccent currentTab" href="">Characters</a>
                     <a class="headingMobile BLACKlightAccent projectsMobile">Projects</a>
                     <a class="headingMobile BLACKlightAccent" href="about.html ">About Me</a>
                 </div>
@@ -123,55 +123,50 @@
     </div>
 
     <!-- Body Starts -->
-    <div id="middle " class="secondBlock ">
+    <div id="middle" class="secondBlock">
 
-        <div class="videoGallery ">
-            <iframe class="videoAbsolute " src="https://www.youtube.com/embed/_GhyjPk9U4s " title="YouTube video player " frameborder="0 " allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
-        </div>
-
-        <a class="guideText ">Click the images for process.</a>
+        <a class="guideText">Click the images for process.</a>
 
         <!-- Big gallery -->
-        <div class="bigGallery ">
-            <div class="mobileGallery ">
-                <img class="elementImage " src="Gallery/Illustration2-1.png " alt="1" onclick="specificSlide(4,s1,png); showLightbox() ">
-                <img class="elementImage " src="Gallery/Illustration5-1.png " alt="5 " onclick="specificSlide(4,s4,png); showLightbox() ">
-                <img class="elementImage " src="Gallery/Illustration4-1.png " alt="4 " onclick="specificSlide(2,s3,png); showLightbox() ">
-                <img class="elementImage " src="Gallery/Illustration3-1.jpg " alt="3 " onclick="specificSlide(3,s2,jpg); showLightbox() ">
+        <div class="bigGallery">
+            <div class="mobileGallery">
+                <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="2" onclick="specificSlide(); showLightbox()">
+                <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="3" onclick="specificSlide(); showLightbox()">
+                <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="4" onclick="specificSlide(); showLightbox()">
+                <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="5" onclick="specificSlide(); showLightbox()">
+                <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="6" onclick="specificSlide(); showLightbox()">
             </div>
         </div>
 
         <!-- 2 column gallery -->
-        <div class="gallery1 ">
-            <img class="elementImage " src="Gallery/Illustration2-1.png " alt="1" onclick="specificSlide(4,s1,png); showLightbox() ">
-            <img class="elementImage " src="Gallery/Illustration4-1.png " alt="4 " onclick="specificSlide(2,s3,png); showLightbox() ">
-            <!-- <img class="elementImage " src="Gallery/Placeholders/16x9Placeholder.png " alt="6 " onclick="specificSlide(s1); showLightbox() "> -->
+        <div class="gallery1">
+            <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="1" onclick="specificSlide(); showLightbox()">
+            <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="3" onclick="specificSlide(); showLightbox()">
+            <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="5" onclick="specificSlide(); showLightbox()">
         </div>
-        <div class="gallery2 ">
-            <img class="elementImage " src="Gallery/Illustration5-1.png " alt="5 " onclick="specificSlide(4,s4,png); showLightbox() ">
-            <img class="elementImage " src="Gallery/Illustration3-1.jpg " alt="3 " onclick="specificSlide(3,s2,jpg); showLightbox() ">
-            <!-- <img class="elementImage " src="Gallery/Placeholders/16x9Placeholder.png " alt="7 " onclick="specificSlide(s1); showLightbox() "> -->
-            <!-- <img class="elementImage " src=" " alt=" " onclick="specificSlide(); showLightbox() "> -->
+        <div class="gallery2">
+            <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="2" onclick="specificSlide(); showLightbox()">
+            <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="4" onclick="specificSlide(); showLightbox()">
+            <img class="elementImage" src="Gallery/Placeholders/16x9Placeholder.png" alt="6" onclick="specificSlide(); showLightbox()">
+            <img class="elementImage" src="" alt="" onclick="specificSlide(); showLightbox()">
         </div>
 
     </div>
 
     <!-- Footer Starts -->
-    <div class="footer ">
-        <div class="socialIcons ">
-            <a href="https://www.instagram.com/apsollon " target="_blank " class="fa fa-instagram "></a>
-            <a href="https://www.artstation.com/apsollon " target="_blank " class="fa fa-link "></a>
-            <a href="https://www.linkedin.com/in/asen-peshev-9b7b8722b/ " target="_blank " class="fa fa-linkedin "></a>
-            <a href="mailto: asenpeshevuni@gmail.com " target="_blank " class="fa fa-envelope "></a>
+    <div class="footer">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/apsollon" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.artstation.com/apsollon" target="_blank" class="fa fa-link"></a>
+            <a href="https://www.linkedin.com/in/asen-peshev-9b7b8722b/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="mailto: asenpeshevuni@gmail.com" target="_blank" class="fa fa-envelope"></a>
         </div>
-        <div class="footerTextBox ">
-            <a class="footerText " href="About/about.html ">CONTACT</a>
-            <p class="footerTextSmall ">asenpeshevuni@gmail.com</p>
+        <div class="footerTextBox">
+            <a class="footerText" href="../About/about.html">CONTACT</a>
+            <p class="footerTextSmall">asenpeshevuni@gmail.com</p>
         </div>
     </div>
-
 </body>
-
 <!-- js scripts -->
 <script src="index/disableScroll.js "></script>
 <script src="index/slideScript.js "></script>

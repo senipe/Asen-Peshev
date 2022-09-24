@@ -1,14 +1,8 @@
 let slidesIndex = 1
 
-let btn = document.querySelector('.midArrowDown');
-let el = document.querySelector('.secondBlock');
+function specificSlide(n) {
+    slidesIndex = n
 
-btn.addEventListener('click', function() {
-    el.scrollIntoView({ behavior: "smooth" });
-});
-
-function specificSlide(x) {
-    slidesIndex = x
     showSlides()
 }
 

@@ -7,7 +7,7 @@ function showLightbox() {
 
 function hideLightbox() {
     let lightbox = document.getElementsByClassName("lightbox");
-    let slides = document.getElementsByClassName("allSlides");
+    let slides = document.getElementsByClassName("mySlides");
 
     // console.log(slides.length + " Slides length at close");
 
