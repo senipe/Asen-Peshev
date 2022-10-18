@@ -103,6 +103,26 @@ nav {
     cursor: pointer;
 }
 
+.heading0 {
+    display: none;
+}
+
+.heading1 {
+    display: none;
+}
+
+.heading2 {
+    display: none;
+}
+
+.heading3 {
+    display: none;
+}
+
+.heading4 {
+    display: none;
+}
+
 
 /* general rules */
 

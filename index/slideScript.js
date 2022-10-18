@@ -11,6 +11,7 @@ let s1 = "Gallery/Illustration2"
 let s2 = "Gallery/Illustration3"
 let s3 = "Gallery/Illustration4"
 let s4 = "Gallery/Illustration5"
+let s5 = "Gallery/Illustration6"
 
 function specificSlide(n, y, z) {
     slidesIndex = 1

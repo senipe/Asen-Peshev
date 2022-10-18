@@ -32,6 +32,9 @@
         transform: translate(0, -50%);
     }
     /* header */
+    .heading0 {
+        display: block;
+    }
     .hideMobile {
         display: none;
     }
