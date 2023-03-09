@@ -1,0 +1,179 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+#menu {
+    height: 100vh;
+    display: block;
+}
+
+#menu-header {
+    display: flex;
+    align-items: center;
+    padding-top: 7vh;
+}
+
+#menu-items:hover>.menu-items {
+    opacity: 0.3;
+    transition: opacity 400ms ease;
+}
+
+#menu-items:hover>.menu-items:hover {
+    opacity: 1;
+    transition: opacity 400ms ease;
+}
+
+.menu-items {
+    display: inline-block;
+    transform: scale(1, 1.05);
+    color: #DFE0E1;
+    font-size: 1.1vw;
+    font-family: 'Work Sans';
+    letter-spacing: 1.5px;
+    opacity: 80%;
+    text-decoration: none;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-weight: 600;
+}
+
+#menu-title {
+    z-index: 2;
+}
+
+.menu-title {
+    white-space: nowrap;
+    display: inline-block;
+    transform: scale(1, 1.12);
+    font-family: 'Josefin Sans';
+    font-size: 2.4vw;
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 85%;
+    text-decoration: none;
+    color: #DFE0E1;
+}
+
+#menu-items {
+    margin-left: 2vw;
+    z-index: 2;
+}
+
+#menu-header {
+    margin-left: 4vw;
+    z-index: 2;
+}
+
+#menu-title:hover>.menu-title {
+    color: white;
+    transition: color 400ms ease;
+}
+
+#menu-scroll {
+    position: absolute;
+    top: 88vh;
+    left: 50%;
+    transform: translate(-50%) scale(0.8, 0.5);
+    z-index: 2;
+}
+
+div.menu-scroll {
+    display: inline-block;
+    color: white;
+    font-size: 4vw;
+    transform: rotate(90deg);
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-link {
+    color: white;
+}
+
+.fa-envelope {
+    color: white;
+}
+
+.fa {
+    text-decoration: none;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+#social-icons:hover>.fa {
+    opacity: 0.3;
+    transition: opacity 400ms ease;
+}
+
+#social-icons:hover>.fa:hover {
+    opacity: 1;
+    transition: opacity 400ms ease;
+}
+
+#social-icons {
+    position: absolute;
+    transform: scale(1.3, 1.3);
+    right: 5vw;
+    z-index: 2;
+}
+
+#menu-background-image {
+    position: absolute;
+    background-size: cover;
+    background-image: url(../Gallery/Graphics/image1_darker3.png);
+    top: -0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#menu-arrow-down {
+    position: absolute;
+    cursor: pointer;
+    color: #A8A6A1;
+    font-size: 2vw;
+    transform: rotate(90deg) scale(.9, 1.5) translate(-50%, +50%);
+    bottom: 4%;
+    left: 50%;
+}
+
+#projects:hover {
+    cursor: pointer;
+}
+
+.menu-projects {
+    display: none;
+}
+
+.menu-default {
+    display: block;
+}
+
+#invisible-menu-hover {
+    /* background-color: red; */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 25vh;
+    width: 100vw;
+    display: none;
+}
+
+#project-red {
+    text-decoration: underline;
+}
+
+#project-red:hover {
+    cursor: pointer;
+}
+
+#button-father {
+    display: none;
+}

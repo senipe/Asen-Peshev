@@ -1,0 +1,106 @@
+.lightbox {
+    display: none;
+}
+
+.lightboxContainer {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1001;
+}
+
+a.closeButton {
+    cursor: pointer;
+    font-size: 35px;
+    display: inline-block;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 3vh;
+    top: 2vh;
+    z-index: 1000;
+}
+
+.slideshowContainer {
+    position: inherit;
+    /* background-color: red; */
+    position: -webkit-sticky;
+    height: 100vh;
+    width: 100%;
+    padding: 10vh;
+}
+
+.closeField {
+    position: absolute;
+    /* background-color: red; */
+    /* position: -webkit-sticky; */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+img.element {
+    max-height: 90vh;
+    max-width: 90%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+a.prevButton,
+a.nextButton {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+a.nextButton {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+a.prevButton:hover,
+a.nextButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prevField,
+.nextField {
+    display: none;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.3s;
+}
+
+.mobileNavigationText {
+    display: none;
+}
+
+@keyframes fade {
+    from {
+        opacity: .7
+    }
+    to {
+        opacity: 1
+    }
+}

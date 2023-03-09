@@ -6,25 +6,24 @@
     <title>Asen Peshev</title>
 
     <!-- meta tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
     <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="description" content="Asen Peshev's Concept Art and Illustration Portfolio">
 
     <!-- css -->
-    <link rel="stylesheet" href="index/main.css">
-    <link rel="stylesheet" href="index/main2.css">
-    <link rel="stylesheet" href="index/lightbox.css">
-    <link rel="stylesheet" href="index/footer.css">
-    <link rel="stylesheet" href="index/headerBarDARK.css">
-    <link rel="stylesheet" href="Gallery/PageHeaders/illustrationsHeader.css">
-    <link rel="stylesheet" href="index/media.css">
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/Header-Interactive.css">
 
-    <!-- pyscript -->
-    <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/body-interactive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
@@ -65,69 +64,51 @@
         </div>
     </div>
 
-    <!-- Header Starts -->
-    <div class="header">
-        <nav>
-            <div class="headerTextBackground">
-                <ul>
-                    <li>
-                        <a style="font-weight: 600 " class="heading lightAccent fadeInSlow heading0">ASEN PESHEV</a>
-                    </li>
-
-                    <li class="hideMobile">
-                        <a style="font-weight: 600; margin-left: 30px;" class="currentTab headingSmall lightAccent glow hideMobile fadeInSlow heading1" href="">Illustrations</a>
-                    </li>
-
-                    <li class="hideMobile">
-                        <a style="font-weight: 600; margin-left: 20px; " class="headingSmall lightAccent glow hideMobile fadeInSlow heading2" href="characters.html">Characters</a>
-                    </li>
-
-                    <li class="hideMobile">
-                        <div style="margin-left: 20px; " class="projectsDrop hideMobile">
-                            <a style="font-weight: 600; " class="projects headingSmall lightAccent fadeInSlow heading3">Projects</a>
-                            <div class="projectsContent ">
-                                <a href="project1.html ">Link 1 <br></a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="hideMobile">
-                        <a style="font-weight: 600; padding-left: 20px; " class="headingSmall lightAccent glow hideMobile fadeInSlow heading4" href="about.html ">About Me</a>
-                    </li>
-
+    <!-- header -->
+    <div id="menu">
+        <div id="menu-header">
+            <div id="menu-title" class="fade-in-fast">
+                <a href="Index.html" class="menu-title">ASEN PESHEV</a>
+            </div>
+            <div id="menu-items" class="menu-default fade-in-fast">
+                <a href="Illustrations.html" class="menu-items">Illustrations</a>
+                <a id="projects" class="menu-items">Concept Art</a>
+                <a href="About.html" class="menu-items">About</a>
+            </div>
+            <div id="button-father">
+                <a id="sidebar-projects-button-img">+</a>
+                <img class="toggle-btn" src="Gallery/Graphics/menuIconWhite.png">
+            </div>
+            <div id="menu-items" class="menu-projects">
+                <a href="Project_1.html" class="menu-items">Steampunk City</a>
+            </div>
+            <div id="social-icons">
+                <a href="https://www.instagram.com/apsollon " target="_blank " class="fa fa-instagram "></a>
+                <a href="https://www.artstation.com/apsollon " target="_blank " class="fa fa-link "></a>
+                <a href="https://www.linkedin.com/in/asen-peshev-9b7b8722b/ " target="_blank " class="fa fa-linkedin "></a>
+                <a href="mailto: asenpeshevuni@gmail.com " target="_blank " class="fa fa-envelope "></a>
+            </div>
+            <div id="sidebar">
+                <ul id="sidebar-default-list">
+                    <li id="Illustrations_href">Illustrations</li>
+                    <li id="projects-interactive">Concept Art</li>
+                    <li id="About_href">About</li>
+                </ul>
+                <ul id="sidebar-projects-list">
+                    <li id="Project_1_href">Steampunk City</li>
                 </ul>
             </div>
-        </nav>
-        <div class="dropMenu ">
-            <div class="closeBarsField" onclick=""></div>
-            <img id="faBars" src="Gallery/Graphics/menuIconWhite.png">
-            <div class="mobileDropMenuBlock fadeInSuperFast">
-                <div class="textHold dropMenuDefault">
-                    <a class="headingMobile BLACKlightAccent currentTab" href="">Illustrations</a>
-                    <a class="headingMobile BLACKlightAccent" href="characters.html">Characters</a>
-                    <a class="headingMobile BLACKlightAccent projectsMobile">Projects</a>
-                    <a class="headingMobile BLACKlightAccent" href="about.html ">About Me</a>
-                </div>
-                <a class="closeBars" onclick="">Back</a>
-                <div class="textHold dropMenuProjects">
-                    <a class="headingMobile BLACKlightAccent" href="project1.html ">Project 1</a>
-                </div>
-
+            <div id="menu-background-image"></div>
+            <div id="menu-arrow-down">
+                <a>></a>
             </div>
         </div>
-        <!-- Text in middle of header -->
-        <div class="fadeInTextSlow midText ">
-            <!--  <p style="font-weight: 600 " class="midTextSmall ">Illustration and Concept Art</p>   -->
-            <img class="midArrowDown" type="button " src="Gallery/Graphics/arrow_down3.png" onClick="">
-        </div>
     </div>
-
-    <!-- Body Starts -->
-    <div id="middle " class="secondBlock ">
-
-        <div class="videoGallery ">
+    <!-- body -->
+    <div id="middle" class="secondBlock">
+        <!-- <div class="videoGallery ">
             <iframe class="videoAbsolute " src="https://www.youtube.com/embed/_GhyjPk9U4s " title="YouTube video player " frameborder="0 " allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
-        </div>
+        </div> -->
 
         <a class="guideText ">Click the images for process.</a>
 
@@ -167,18 +148,19 @@
             <a href="mailto: asenpeshevuni@gmail.com " target="_blank " class="fa fa-envelope "></a>
         </div>
         <div class="footerTextBox ">
-            <a class="footerText " href="About/about.html ">CONTACT</a>
+            <a class="footerText " href="About.html ">CONTACT</a>
             <p class="footerTextSmall ">asenpeshevuni@gmail.com</p>
         </div>
     </div>
-
 </body>
 
-<!-- js scripts -->
-<script src="index/disableScroll.js "></script>
-<script src="index/slideScript.js "></script>
-<script src="index/lightbox.js "></script>
-<script src="index/main.js "></script>
-<script src="index/animations.js "></script>
+<script src="JS/disableScroll.js"></script>
+<script src="JS/projects.js"></script>
+<script src="JS/projects-interactive.js"></script>
+<script src="JS/sidebar.js"></script>
+<script src="JS/slideScript.js"></script>
+<!-- <script src="JS/slideScriptSlideshow.js"></script> -->
+<script src="JS/lightbox.js"></script>
+<script src="JS/scrollButton.js"></script>
 
 </html>

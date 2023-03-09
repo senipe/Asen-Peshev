@@ -1,0 +1,96 @@
+@media (max-width: 900px) {
+    #menu {
+        height: 15vh;
+    }
+    #menu-background-image {
+        display: none;
+    }
+    .menu-title {
+        font-size: 4vh;
+    }
+    #menu-items {
+        display: none;
+    }
+    #social-icons {
+        display: none;
+    }
+    #menu-arrow-down {
+        display: none;
+    }
+    #sidebar {
+        display: none;
+    }
+    #sidebar-projects-list {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+    #sidebar-default-list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+    .toggle-btn {
+        display: block;
+    }
+    #sidebar {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        transition: .3s;
+    }
+    #sidebar.active {
+        opacity: 100;
+        transition: .3s;
+    }
+    #sidebar ul li {
+        cursor: pointer;
+        list-style: none;
+        color: black;
+        font-size: 8vw;
+        padding: 20px 0px;
+    }
+    #sidebar-projects-button-img {
+        display: none;
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        font-size: 45px;
+        transform: rotate(45deg) translate(0, -65%);
+        z-index: 100;
+    }
+    .toggle-btn {
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+        width: 45px;
+        height: auto;
+        display: block;
+        top: 0%;
+        transform: translate(0, -50%);
+        z-index: 100;
+    }
+    #menu-header {
+        margin-right: 4vw;
+        z-index: 2;
+    }
+    #button-father {
+        display: block;
+        position: absolute;
+        width: 90%;
+        height: 5px;
+        z-index: 100;
+    }
+}
+
+@media (max-height: 450px) {}

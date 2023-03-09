@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="icon" href="Gallery/Graphics/icon.png">
+    <title>Asen Peshev</title>
+
+    <!-- meta tags -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" content="Asen Peshev's Concept Art and Illustration Portfolio">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/Header-Interactive.css">
+
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/body-interactive.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Lightbox -->
+    <div class="lightboxContainer lightbox">
+        <a class="closeButton" onclick="hideLightbox()">+</a>
+        <div class="slideshowContainer">
+            <div class="closeField" onclick="hideLightbox()"></div>
+
+            <div class="mySlides">
+                <img class="element" id="element1" src="Gallery/Project1-1.png ">
+            </div>
+            <div class="mySlides">
+                <img class="element" id="element2" src="Gallery/Project1-2.png ">
+            </div>
+            <div class="mySlides">
+                <img class="element" id="element3" src="Gallery/Project1-3.png ">
+            </div>
+            <div class="mySlides">
+                <img class="element" id="element4" src="Gallery/Project1-4.png ">
+            </div>
+            <div class="mySlides">
+                <img class="element" id="element5" src="Gallery/Project1-5.png ">
+            </div>
+
+        </div>
+        <!-- Forward/Backward Buttons -->
+        <a class="prevButton" onclick="plusSlides(-1) ">❮</a>
+        <a class="nextButton" onclick="plusSlides(1) ">❯</a>
+        <!-- Mobile Fields -->
+        <div class="mobileFields ">
+            <div class="prevField " onclick="plusSlides(-1) "></div>
+            <div class="nextField " onclick="plusSlides(1) "></div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <div id="menu">
+        <div id="menu-header">
+            <div id="menu-title" class="fade-in-fast">
+                <a href="Index.html" class="menu-title">ASEN PESHEV</a>
+            </div>
+            <div id="menu-items" class="menu-default fade-in-fast">
+                <a href="Illustrations.html" class="menu-items">Illustrations</a>
+                <a id="projects" class="menu-items">Concept Art</a>
+                <a href="About.html" class="menu-items">About</a>
+            </div>
+            <div id="button-father">
+                <a id="sidebar-projects-button-img">+</a>
+                <img class="toggle-btn" src="Gallery/Graphics/menuIconWhite.png">
+            </div>
+            <div id="menu-items" class="menu-projects">
+                <a href="Project_1.html" class="menu-items">Steampunk City</a>
+            </div>
+            <div id="social-icons">
+                <a href="https://www.instagram.com/apsollon " target="_blank " class="fa fa-instagram "></a>
+                <a href="https://www.artstation.com/apsollon " target="_blank " class="fa fa-link "></a>
+                <a href="https://www.linkedin.com/in/asen-peshev-9b7b8722b/ " target="_blank " class="fa fa-linkedin "></a>
+                <a href="mailto: asenpeshevuni@gmail.com " target="_blank " class="fa fa-envelope "></a>
+            </div>
+            <div id="sidebar">
+                <ul id="sidebar-default-list">
+                    <li id="Illustrations_href">Illustrations</li>
+                    <li id="projects-interactive">Concept Art</li>
+                    <li id="About_href">About</li>
+                </ul>
+                <ul id="sidebar-projects-list">
+                    <li id="Project_1_href">Steampunk City</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- body -->
+    <div id="middle" class="secondBlock">
+        <!-- Big gallery -->
+        <div class="bigGallery ">
+            <div class="mobileGallery">
+                <img class="elementImage " src="Gallery/Project1-1.png " alt="1" onclick="specificSlide(1); showLightbox() ">
+                <img class="elementImage " src="Gallery/Project1-2.png " alt="1" onclick="specificSlide(2); showLightbox() ">
+                <img class="elementImage " src="Gallery/Project1-3.png " alt="5 " onclick="specificSlide(3); showLightbox() ">
+                <img class="elementImage " src="Gallery/Project1-4.png " alt="4 " onclick="specificSlide(4); showLightbox() ">
+                <img class="elementImage " src="Gallery/Project1-5.png " alt="3 " onclick="specificSlide(5); showLightbox() ">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Starts -->
+    <div class="footer ">
+        <div class="socialIcons ">
+            <a href="https://www.instagram.com/apsollon " target="_blank " class="fa fa-instagram "></a>
+            <a href="https://www.artstation.com/apsollon " target="_blank " class="fa fa-link "></a>
+            <a href="https://www.linkedin.com/in/asen-peshev-9b7b8722b/ " target="_blank " class="fa fa-linkedin "></a>
+            <a href="mailto: asenpeshevuni@gmail.com " target="_blank " class="fa fa-envelope "></a>
+        </div>
+        <div class="footerTextBox ">
+            <a class="footerText " href="About.html ">CONTACT</a>
+            <p class="footerTextSmall ">asenpeshevuni@gmail.com</p>
+        </div>
+    </div>
+</body>
+
+<script src="JS/disableScroll.js"></script>
+<script src="JS/projects.js"></script>
+<script src="JS/projects-interactive.js"></script>
+<script src="JS/sidebar.js"></script>
+<!-- <script src="JS/slideScript.js"></script> -->
+<script src="JS/slideScriptSlideshow.js"></script>
+<script src="JS/lightbox.js"></script>
+<script src="JS/scrollButton.js"></script>
+
+</html>
