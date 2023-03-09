@@ -66,13 +66,15 @@ function showSlides(slidesLenght) {
 }
 
 function hideNavButtons() {
-    if (slidesLenght == 1) {
-        console.log("hide")
-        document.getElementsByClassName("prevButton")[0].style.display = "none"
-        document.getElementsByClassName("nextButton")[0].style.display = "none"
-    } else {
-        console.log("show")
-        document.getElementsByClassName("prevButton")[0].style.display = "block"
-        document.getElementsByClassName("nextButton")[0].style.display = "block"
+    if (window.matchMedia('(min-width: 920px)').matches) {
+        if (slidesLenght == 1) {
+            console.log("hide")
+            document.getElementsByClassName("prevButton")[0].style.display = "none"
+            document.getElementsByClassName("nextButton")[0].style.display = "none"
+        } else {
+            console.log("show")
+            document.getElementsByClassName("prevButton")[0].style.display = "block"
+            document.getElementsByClassName("nextButton")[0].style.display = "block"
+        }
     }
 }
