@@ -28,6 +28,7 @@ function specificSlide(n, y, z) {
     tempName = y
     type = z
 
+    hideNavButtons()
     showSlides(slidesLenght)
 }
 
@@ -62,4 +63,16 @@ function showSlides(slidesLenght) {
     } /* Removes all objects of class */
 
     slides[slidesIndex - 1].style.display = "block"; /* Shows the object */
+}
+
+function hideNavButtons() {
+    if (slidesLenght == 1) {
+        console.log("hide")
+        document.getElementsByClassName("prevButton")[0].style.display = "none"
+        document.getElementsByClassName("nextButton")[0].style.display = "none"
+    } else {
+        console.log("show")
+        document.getElementsByClassName("prevButton")[0].style.display = "block"
+        document.getElementsByClassName("nextButton")[0].style.display = "block"
+    }
 }
