@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="CStyle/footer.css">
     <link rel="stylesheet" href="CStyle/body.css">
     <link rel="stylesheet" href="CStyle/body-interactive.css">
-    <link rel="stylesheet" href="CStyle/non-header.css">
+    <link rel="stylesheet" href="CStyle/projects.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -39,19 +39,19 @@
             <div class="closeField" onclick="hideLightbox()"></div>
 
             <div class="mySlides">
-                <img class="element" id="element1">
+                <img class="element" id="element1" src="Gallery/Project1-1.png ">
             </div>
             <div class="mySlides">
-                <img class="element" id="element2">
+                <img class="element" id="element2" src="Gallery/Project1-2.png ">
             </div>
             <div class="mySlides">
-                <img class="element" id="element3">
+                <img class="element" id="element3" src="Gallery/Project1-3.png ">
             </div>
             <div class="mySlides">
-                <img class="element" id="element4">
+                <img class="element" id="element4" src="Gallery/Project1-4.png ">
             </div>
             <div class="mySlides">
-                <img class="element" id="element5">
+                <img class="element" id="element5" src="Gallery/Project1-5.png ">
             </div>
 
         </div>
@@ -103,37 +103,17 @@
     </div>
     <!-- body -->
     <div id="middle" class="secondBlock">
-        <!-- <div class="videoGallery ">
-            <iframe class="videoAbsolute " src="https://www.youtube.com/embed/_GhyjPk9U4s " title="YouTube video player " frameborder="0 " allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
-        </div> -->
-
-        <a class="guideText ">Click on images for process.</a>
-
+        <a class="guideText ">Click on images for slideshow.</a>
         <!-- Big gallery -->
         <div class="bigGallery ">
-            <div class="mobileGallery ">
-                <img class="elementImage " src="Gallery/Illustration6-1.png " alt="1" onclick="specificSlide(3,s5,png); showLightbox() ">
-                <img class="elementImage " src="Gallery/Illustration2-1.png " alt="1" onclick="specificSlide(4,s1,png); showLightbox() ">
-                <img class="elementImage " src="Gallery/Illustration5-1.png " alt="5 " onclick="specificSlide(4,s4,png); showLightbox() ">
-                <img class="elementImage " src="Gallery/Illustration4-1.png " alt="4 " onclick="specificSlide(2,s3,png); showLightbox() ">
-                <img class="elementImage " src="Gallery/Illustration3-1.jpg " alt="3 " onclick="specificSlide(3,s2,jpg); showLightbox() ">
+            <div class="mobileGallery">
+                <img class="elementImage " src="Gallery/Project1-1.png " alt="1" onclick="specificSlide(1); showLightbox() ">
+                <img class="elementImage " src="Gallery/Project1-2.png " alt="1" onclick="specificSlide(2); showLightbox() ">
+                <img class="elementImage " src="Gallery/Project1-3.png " alt="5 " onclick="specificSlide(3); showLightbox() ">
+                <img class="elementImage " src="Gallery/Project1-4.png " alt="4 " onclick="specificSlide(4); showLightbox() ">
+                <img class="elementImage " src="Gallery/Project1-5.png " alt="3 " onclick="specificSlide(5); showLightbox() ">
             </div>
         </div>
-
-        <!-- 2 column gallery -->
-        <div class="gallery1 ">
-            <img class="elementImage " src="Gallery/Illustration6-1.png " alt="1" onclick="specificSlide(3,s5,png); showLightbox() ">
-            <img class="elementImage " src="Gallery/Illustration2-1.png " alt="1" onclick="specificSlide(4,s1,png); showLightbox() ">
-            <img class="elementImage " src="Gallery/Illustration4-1.png " alt="4 " onclick="specificSlide(2,s3,png); showLightbox() ">
-            <!-- <img class="elementImage " src="Gallery/Placeholders/16x9Placeholder.png " alt="6 " onclick="specificSlide(s1); showLightbox() "> -->
-        </div>
-        <div class="gallery2 ">
-            <img class="elementImage " src="Gallery/Illustration5-1.png " alt="5 " onclick="specificSlide(4,s4,png); showLightbox() ">
-            <img class="elementImage " src="Gallery/Illustration3-1.jpg " alt="3 " onclick="specificSlide(3,s2,jpg); showLightbox() ">
-            <!-- <img class="elementImage " src="Gallery/Placeholders/16x9Placeholder.png " alt="7 " onclick="specificSlide(s1); showLightbox() "> -->
-            <!-- <img class="elementImage " src=" " alt=" " onclick="specificSlide(); showLightbox() "> -->
-        </div>
-
     </div>
 
     <!-- Footer Starts -->
@@ -155,8 +135,8 @@
 <script src="JavaS/projects.js"></script>
 <script src="JavaS/projects-interactive.js"></script>
 <script src="JavaS/sidebar.js"></script>
-<script src="JavaS/slideScript.js"></script>
-<!-- <script src="JS/slideScriptSlideshow.js"></script> -->
+<!-- <script src="JS/slideScript.js"></script> -->
+<script src="JavaS/slideScriptSlideshow.js"></script>
 <script src="JavaS/lightbox.js"></script>
 <script src="JavaS/scrollButton.js"></script>
 
