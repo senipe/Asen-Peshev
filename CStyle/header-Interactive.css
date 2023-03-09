@@ -1,4 +1,7 @@
 @media (max-width: 900px) {
+    body {
+        -webkit-tap-highlight-color: transparent;
+    }
     #menu {
         height: 15vh;
     }
@@ -23,17 +26,25 @@
     #sidebar-projects-list {
         display: none;
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         white-space: nowrap;
+        transition: .3s;
     }
     #sidebar-default-list {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
         white-space: nowrap;
+        transition: .3s;
+    }
+    #sidebar-projects-list.active {
+        top: 50%;
+    }
+    #sidebar-default-list.active {
+        top: 50%;
     }
     .toggle-btn {
         display: block;
@@ -59,6 +70,7 @@
         color: black;
         font-size: 8vw;
         padding: 20px 0px;
+        user-select: none;
     }
     #sidebar-projects-button-img {
         display: none;
@@ -79,6 +91,7 @@
         top: 0%;
         transform: translate(0, -50%);
         z-index: 100;
+        user-select: none;
     }
     #menu-header {
         margin-right: 4vw;

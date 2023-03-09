@@ -3,6 +3,16 @@
     body {
         height: 100%;
     }
+    /* footer */
+    .socialIcons {
+        bottom: 10px;
+        right: 0;
+    }
+    .footerTextBox {
+        color: white;
+        top: 20px;
+        left: 10px;
+    }
 }
 
 @media (max-height: 450px) {}
