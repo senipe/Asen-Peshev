@@ -10,6 +10,8 @@
     }
     .menu-title {
         font-size: 4vh;
+        margin-left: 3vw;
+        opacity: 100%;
     }
     #menu-items {
         display: none;

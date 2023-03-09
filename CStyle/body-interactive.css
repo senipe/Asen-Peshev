@@ -12,7 +12,7 @@
         display: none;
     }
     img.element {
-        top: 47%;
+        bottom: 53%;
         max-width: 95%;
         max-height: 75%;
     }
@@ -173,7 +173,7 @@
 @media (max-height: 450px) {
     /* lightbox */
     img.element {
-        top: 50%;
+        bottom: 50%;
     }
     .nextField,
     .prevField {

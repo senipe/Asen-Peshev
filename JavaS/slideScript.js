@@ -7,11 +7,19 @@ let type = ""
 let png = ".png"
 let jpg = ".jpg"
 
-let s1 = "Gallery/Illustration2"
-let s2 = "Gallery/Illustration3"
-let s3 = "Gallery/Illustration4"
-let s4 = "Gallery/Illustration5"
-let s5 = "Gallery/Illustration6"
+let i2 = "Gallery/Illustration2"
+let i3 = "Gallery/Illustration3"
+let i4 = "Gallery/Illustration4"
+let i5 = "Gallery/Illustration5"
+let i6 = "Gallery/Illustration6"
+let i7 = "Gallery/Illustration7"
+
+let b1 = "Gallery/Blender1"
+
+let s1 = "Gallery/Study1"
+let s2 = "Gallery/Study2"
+let s3 = "Gallery/Study3"
+let s4 = "Gallery/Study4"
 
 function specificSlide(n, y, z) {
     slidesIndex = 1
