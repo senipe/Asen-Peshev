@@ -31,17 +31,17 @@ Project_1 = document.getElementById("Project_1_href")
 Illustrations.addEventListener("click", Illustrations_href_open);
 
 function Illustrations_href_open() {
-    location.href = "Illustrations.html"
+    location.href = "illustrations.html"
 }
 
 About.addEventListener("click", About_href_open);
 
 function About_href_open() {
-    location.href = "About.html"
+    location.href = "about.html"
 }
 
 Project_1.addEventListener("click", Project_1_href_open);
 
 function Project_1_href_open() {
-    location.href = "Project_1.html"
+    location.href = "project_1.html"
 }
