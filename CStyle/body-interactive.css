@@ -1,4 +1,4 @@
-@media (max-width: 900px) {
+@media (max-width: 920px) {
     html,
     body {
         height: 100%;
@@ -13,7 +13,8 @@
     }
     img.element {
         top: 47%;
-        max-width: 70%;
+        max-width: 95%;
+        max-height: 75%;
     }
     .prevField {
         left: 0;
@@ -172,7 +173,6 @@
 @media (max-height: 450px) {
     /* lightbox */
     img.element {
-        max-width: 90%;
         top: 50%;
     }
     .nextField,
