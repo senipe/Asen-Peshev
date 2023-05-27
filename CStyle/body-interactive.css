@@ -149,7 +149,8 @@
         transform: translate(-50%);
     }
     .gallery1,
-    .gallery2 {
+    .gallery2,
+    .gallery3 {
         display: none;
     }
     .mobileGallery {

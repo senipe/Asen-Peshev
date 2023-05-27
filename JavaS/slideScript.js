@@ -23,6 +23,16 @@ let s2 = "Gallery/Study2"
 let s3 = "Gallery/Study3"
 let s4 = "Gallery/Study4"
 
+let ca1 = "Gallery/CA1"
+let ca2 = "Gallery/CA2"
+let ca3 = "Gallery/CA3"
+let ca4 = "Gallery/CA4"
+let ca5 = "Gallery/CA5"
+let ca6 = "Gallery/CA6"
+let ca7 = "Gallery/CA7"
+let ca8 = "Gallery/CA8"
+let ca9 = "Gallery/CA9"
+
 function specificSlide(n, y, z) {
     slidesIndex = 1
 

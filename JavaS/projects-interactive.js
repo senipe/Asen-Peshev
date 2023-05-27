@@ -7,10 +7,10 @@ let projects_button_interactive = document.getElementById("sidebar-projects-butt
 
 projects_button_interactive.style.display = "none"
 
-if (window.matchMedia('(max-width: 900px)').matches) {
-    projects_interactive.addEventListener("click", projectsMenu);
-    projects_button_interactive.addEventListener("click", defaultMenu);
-}
+// if (window.matchMedia('(max-width: 900px)').matches) {
+//     projects_interactive.addEventListener("click", projectsMenu);
+//     projects_button_interactive.addEventListener("click", defaultMenu);
+// }
 
 function projectsMenu() {
     tempTab_interactive.style.display = "block";

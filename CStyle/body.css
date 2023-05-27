@@ -63,6 +63,13 @@
     overflow: auto;
 }
 
+.gallery3 {
+    width: 75%;
+    height: auto;
+    overflow: auto;
+    margin: auto;
+}
+
 .elementImage {
     max-width: 100%;
     cursor: pointer;
