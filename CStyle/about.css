@@ -12,3 +12,54 @@
     /* #DFE0E1 */
     padding: 10vh;
 }
+
+.aboutMain-web {
+    /* overflow: hidden; */
+    display: flex;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+}
+
+.aboutHalfOne-web {
+    flex: 1;
+    overflow: hidden;
+    /* background-color: red; */
+    width: 20%;
+    height: 100%;
+}
+
+.aboutHalfTwo-web {
+    position: relative;
+    /* background-color: green; */
+    width: 300px;
+    height: 100%;
+    left: 0;
+    /* transform: translate(-100%); */
+}
+
+.aboutImage {
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 2vw;
+}
+
+.aboutText {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 2vw;
+}
+
+.aboutHalfOne-int {
+    display: none;
+}
+
+.aboutHalfTwo-int {
+    display: none;
+}
