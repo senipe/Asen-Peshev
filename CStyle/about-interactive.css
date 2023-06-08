@@ -56,6 +56,9 @@
     .aboutText-int {
         text-align: center;
     }
+    .aboutMain-web {
+        display: none;
+    }
 }
 
 @media (max-height: 450px) {}
