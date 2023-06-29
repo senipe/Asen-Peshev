@@ -28,7 +28,7 @@ Illustrations = document.getElementById("Illustrations_href")
 About = document.getElementById("About_href")
 Project_1 = document.getElementById("Project_1_href")
 
-Illustrations.addEventListener("click", Illustrations_href_open);
+// Illustrations.addEventListener("click", Illustrations_href_open);
 
 function Illustrations_href_open() {
     location.href = "illustrations.html"
