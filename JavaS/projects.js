@@ -11,10 +11,10 @@ let btn_projects = document.getElementById("sidebar-projects-button-img")
 var pc_menu_check
 pc_menu_check = 0;
 
-// if (window.matchMedia('(min-width: 900px)').matches) {
-//     projects.addEventListener("click", projectsMenu);
-//     document.getElementsByTagName('body')[0].addEventListener("click", defaultMenu);
-// }
+if (window.matchMedia('(min-width: 900px)').matches) {
+    projects.addEventListener("click", projectsMenu);
+    document.getElementsByTagName('body')[0].addEventListener("click", defaultMenu);
+}
 
 function projectsMenu() {
     if (pc_menu_check == 0) {

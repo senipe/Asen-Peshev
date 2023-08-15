@@ -33,6 +33,8 @@ let ca7 = "Gallery/CA7"
 let ca8 = "Gallery/CA8"
 let ca9 = "Gallery/CA9"
 
+let ca_2_1 = "Gallery/CA[2]1"
+
 function specificSlide(n, y, z) {
     slidesIndex = 1
 

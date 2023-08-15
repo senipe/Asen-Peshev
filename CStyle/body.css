@@ -33,6 +33,17 @@
     padding-right: 20vw;
 }
 
+.descriptionText {
+    display: inline-block;
+    position: inherit;
+    /* width: 100vw; */
+    left: 50%;
+    transform: translate(-50%);
+    padding-bottom: 3vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
 .videoAbsolute {
     position: inherit;
     height: 100%;
@@ -64,10 +75,11 @@
 }
 
 .gallery3 {
-    width: 75%;
+    width: 80%;
     height: auto;
     overflow: auto;
     margin: auto;
+    padding-bottom: 5vh;
 }
 
 .elementImage {
