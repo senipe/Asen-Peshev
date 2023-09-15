@@ -15,6 +15,7 @@ let i6 = "Gallery/Illustration6"
 let i7 = "Gallery/Illustration7"
 let i8 = "Gallery/Illustration8"
 let i9 = "Gallery/Illustration9"
+let i10 = "Gallery/Illustration10"
 
 let b1 = "Gallery/Blender1"
 
