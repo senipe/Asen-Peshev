@@ -54,7 +54,8 @@ body {
 .menu-items {
     display: inline-block;
     transform: scale(1, 1.05);
-    color: #DFE0E1;
+    color: rgba(255, 255, 255, 0.973);
+    /* color: #DFE0E1; */
     font-size: 1.1vw;
     font-family: 'Work Sans';
     letter-spacing: 1.5px;
@@ -79,7 +80,8 @@ body {
     letter-spacing: 2px;
     opacity: 85%;
     text-decoration: none;
-    color: #DFE0E1;
+    color: rgba(255, 255, 255, 0.979);
+    /* color: #DFE0E1; */
 }
 
 #menu-items {
