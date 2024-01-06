@@ -27,6 +27,7 @@ function defaultMenu() {
 Illustrations = document.getElementById("Illustrations_href")
 About = document.getElementById("About_href")
 Project_1 = document.getElementById("Project_1_href")
+Project_2 = document.getElementById("Project_2_href")
 Project_standalone = document.getElementById("Project_standalone_href")
 
 // Illustrations.addEventListener("click", Illustrations_href_open);
@@ -45,6 +46,12 @@ Project_1.addEventListener("click", Project_1_href_open);
 
 function Project_1_href_open() {
     location.href = "project_1.html"
+}
+
+Project_2.addEventListener("click", Project_2_href_open);
+
+function Project_2_href_open() {
+    location.href = "project_2.html"
 }
 
 Project_standalone.addEventListener("click", Project_standalone_href_open);
