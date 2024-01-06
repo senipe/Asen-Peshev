@@ -16,6 +16,8 @@ let i7 = "Gallery/Illustration7"
 let i8 = "Gallery/Illustration8"
 let i9 = "Gallery/Illustration9"
 let i10 = "Gallery/Illustration10"
+let i11 = "Gallery/Illustration11"
+let i12 = "Gallery/Illustration12"
 
 let b1 = "Gallery/Blender1"
 
@@ -35,6 +37,8 @@ let ca8 = "Gallery/CA8"
 let ca9 = "Gallery/CA9"
 
 let ca_2_1 = "Gallery/CA[2]1"
+let ca_3_1 = "Gallery/CA[3]1"
+let ca_3_2 = "Gallery/CA[3]2"
 
 function specificSlide(n, y, z) {
     slidesIndex = 1

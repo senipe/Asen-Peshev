@@ -156,7 +156,7 @@ div.menu-scroll {
 #menu-background-image {
     position: absolute;
     background-size: cover;
-    background-image: url(../Gallery/Graphics/image1_darker3.png);
+    background-image: url(../Gallery/Graphics/background.png);
     top: -0;
     left: 0;
     height: 100vh;
