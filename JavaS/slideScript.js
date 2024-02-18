@@ -7,38 +7,11 @@ let type = ""
 let png = ".png"
 let jpg = ".jpg"
 
-let i2 = "Gallery/Illustration2"
-let i3 = "Gallery/Illustration3"
-let i4 = "Gallery/Illustration4"
-let i5 = "Gallery/Illustration5"
-let i6 = "Gallery/Illustration6"
-let i7 = "Gallery/Illustration7"
-let i8 = "Gallery/Illustration8"
-let i9 = "Gallery/Illustration9"
-let i10 = "Gallery/Illustration10"
-let i11 = "Gallery/Illustration11"
-let i12 = "Gallery/Illustration12"
-
-let b1 = "Gallery/Blender1"
-
-let s1 = "Gallery/Study1"
-let s2 = "Gallery/Study2"
-let s3 = "Gallery/Study3"
-let s4 = "Gallery/Study4"
-
-let ca1 = "Gallery/CA1"
-let ca2 = "Gallery/CA2"
-let ca3 = "Gallery/CA3"
-let ca4 = "Gallery/CA4"
-let ca5 = "Gallery/CA5"
-let ca6 = "Gallery/CA6"
-let ca7 = "Gallery/CA7"
-let ca8 = "Gallery/CA8"
-let ca9 = "Gallery/CA9"
-
+let ca_1_1 = "Gallery/CA[1]1"
 let ca_2_1 = "Gallery/CA[2]1"
 let ca_3_1 = "Gallery/CA[3]1"
 let ca_3_2 = "Gallery/CA[3]2"
+let ca_4_1 = "Gallery/CA[4]1"
 
 function specificSlide(n, y, z) {
     slidesIndex = 1
