@@ -3,6 +3,7 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQNQHXL3SK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -44,6 +45,12 @@
 </head>
 
 <body>
+    <!-- Captcha -->
+    <form action="?" method="POST">
+        <div class="g-recaptcha" data-sitekey="6LfpKnwpAAAAAAQIWHaeRxn74X3ZbkD4XH21gOs3"></div>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
     <!-- Lightbox -->
     <div class="lightboxContainer lightbox">
         <a class="closeButton" onclick="hideLightbox()">+</a>
